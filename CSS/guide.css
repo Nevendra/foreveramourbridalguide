@@ -211,9 +211,10 @@
         width: 100%;
         padding-top: 10px;
     }
-    .contentContainer {
-        padding: 0px 0px;
+    .contentContainer p {
+        padding: 0px 10px;
     }
+
 
     
 
