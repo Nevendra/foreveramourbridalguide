@@ -166,11 +166,13 @@
         background-color: rgb(150, 150, 150);
     }
     .socialMediaFooterIcons {
-        width: 47%;
+        width: 40%;
         margin: 0 auto;
         height: 30px;
-        /*background-color: red;*/
-     /*   padding-left: 20%;*/
+       /* background-color: red;*/
+        text-align: center;
+        float: left;
+        padding-left: 5px;
     }
     .socialLinkFooter{
         float: left;
@@ -178,8 +180,8 @@
         margin: 5px;
         font-size: 0px;
         line-height: 0px;
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
         background-color: lightgrey;
         border-radius: 50%;
         border: solid 1px white;
@@ -188,13 +190,21 @@
         width: 100%;
     }
     .contactFooter{
-        font-size: 12px;
+        font-size: 10px;
         padding-bottom: 5px;
-        padding-left: 20px;
+        padding-right: 5px;
+        width: 60%;
+        float: left;
+        text-align: right;
     }
     
     footer{
         background-color: lightgrey;
+        height: 70px;
+    }
+    .mainTitle {
+        padding: 0px;
+        margin: 0px;
     }
 
     .mainBodyImage img {
@@ -202,9 +212,8 @@
         padding-top: 10px;
     }
     .contentContainer {
-        padding: 0px 10px;
+        padding: 0px 0px;
     }
-
 
     
 
