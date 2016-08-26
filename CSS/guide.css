@@ -45,6 +45,7 @@
     .mobileLogoDiv {
         width: 100%;
         text-align: center;
+        padding-right: 5px;
     }
     .mobileLogo {
         color: lightblue;
