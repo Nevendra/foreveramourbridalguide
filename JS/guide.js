@@ -1,16 +1,23 @@
 $(document).ready(function(){
 	
 	function toggleNav() {
-				$('nav').slideToggle()
-			};
+		$('nav').slideToggle()
+	};
 
-	$('.hamburgerMenu').click(toggleNav);
+	$('.hamburgerMenuIcon').click(toggleNav);
+
 
 	function toggleNavChildren() {
-				$('nav ul li ul').slideToggle()
-			};
+		// $(this).parent().next().next().slideToggle()
+		console.log($(".dropdown"));
+	};
 
-	$('.dropdown').click(toggleNav);
+	// $('.downArrowIcon').click(toggleNavChildren);
+
+	$('.downArrowIcon').click(function(){
+        $(this).parent().parent().children('.dropdown').slideToggle();
+        console.log($(this).parent().parent().children('.dropdown'));
+    });
 	
 
 });

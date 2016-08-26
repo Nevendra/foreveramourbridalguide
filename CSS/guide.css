@@ -5,23 +5,6 @@
         box-sizing: inherit;
     }
 
-    .mobileLogoDiv {
-        width: 100%;
-        text-align: center;
-    }
-    .mobileLogo {
-        color: lightblue;
-        font-family: "Great Vibes", sans-serif;
-        font-size: 50px;
-        //width: 26%;
-        //line-height: 32px;
-        padding: 6px 0px 0px 5px;
-        text-align: center;
-         text-decoration: none;
-    }
-    .hamburgerMenu {
-        text-align: center;
-    }
     body{
         margin: 0px;
         font-family: 'Open Sans', sans-serif;
@@ -59,6 +42,28 @@
         line-height: 30px;
     }
 
+    .mobileLogoDiv {
+        width: 100%;
+        text-align: center;
+    }
+    .mobileLogo {
+        color: lightblue;
+        font-family: "Great Vibes", sans-serif;
+        font-size: 50px;
+        //width: 26%;
+        //line-height: 32px;
+        padding: 6px 0px 0px 5px;
+        text-align: center;
+         text-decoration: none;
+    }
+    .hamburgerMenu {
+        text-align: center;
+    }
+
+    .clear {
+        clear: both;
+    }
+
     /*******************************
     START NAV
     ********************************/
@@ -66,6 +71,7 @@
     nav{
         margin-top: 10px;
         display: none;
+        
     }
 
     nav ul{
@@ -73,8 +79,8 @@
         padding: 0px;
         margin: 0px;
         width: 100%;
+        text-align: justify;
         justify-content: space-between;
-        text-align: center;
     }
 
     nav ul li{
@@ -85,16 +91,27 @@
         //border: solid 1px violet;
         width: 0;
         padding: 0;
+        display: none;
     }
 
     nav ul li a{
         //border: solid 1px;
         color: black;
         text-decoration: none;
+        padding-left: 10px;
     }
 
     nav ul li ul{
         display: none;
+    }
+
+    .downArrow {
+        margin: 0px;
+        padding: 0px;
+        line-height: 0px;
+        float: right;
+        padding-right: 10px;
+
     }
 
     #navlogo{
@@ -112,19 +129,9 @@
     }
 
     #navApptlink div{
-        border-left: solid 1px #e06161;
         background-color: rgba(224, 97, 97, 0.2);    
-        display: inline-block;
-        float: left;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 20%;
-        line-height: 25px;
-        padding-top: 3px;
-        padding-bottom: 3px;
+        width: 100%;
         text-align: center;
-        transition: 0.3s;
     }
 
     #apptArrow{
