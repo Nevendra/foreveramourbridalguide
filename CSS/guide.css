@@ -84,7 +84,8 @@
     }
 
     nav ul li{
-        
+        padding: 0px;
+        margin: 0px;
     }
 
     nav ul #empty{
@@ -103,6 +104,13 @@
 
     nav ul li ul{
         display: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    nav ul li ul li{
+        padding-left: 20%;
+        font-size: 15px;
     }
 
     .downArrow {
@@ -138,6 +146,28 @@
         font-size: 20px;
         //margin-left: 3px;
         transition: transform 0.5s;
+    }
+    
+    #contactDropdown .socialLink{
+    //border: solid 1px;
+    border-radius: 50%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 7px;
+    }
+
+    #contactDropdown img{
+        //border: solid orange 1px;
+        border-radius: 50%;
+        width: 100%;
+        background-color: rgb(150, 150, 150);
+    }
+
+    .mainBodyImage img {
+        width: 100%;
+        padding-top: 10px;
     }
 
 
