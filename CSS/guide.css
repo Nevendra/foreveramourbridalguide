@@ -208,6 +208,7 @@
         position: fixed;
         top: 0px;
         z-index: 3;
+        margin-top: 0px;
         /*make sure the z-index for nav is higher than it is for google translate dropdown (but google translate z-index can't be lower than 2 because it messes things up)*/
     }
 
@@ -496,6 +497,7 @@
         position: fixed;
         top: 0px;
         z-index: 3;
+        margin-top: 0px;
         /*make sure the z-index for nav is higher than it is for google translate dropdown (but google translate z-index can't be lower than 2 because it messes things up)*/
     }
 
