@@ -211,9 +211,26 @@
         width: 100%;
         padding-top: 10px;
     }
-    .contentContainer {
-        padding: 0px 0px;
+    .contentContainer p {
+        padding: 0px 10px;
     }
+     
+    .stepOne div{
+        width: 100%;
+    }
+    .floatImgText img {
+        float: left;
+        width: 50%;
+    }
+    .floatImgText p {
+        float: left;
+        width: 50%;
+        margin: 0px;
+        padding: 5px;
+        font-size: 15px;
+    
+    }
+
 
     
 
