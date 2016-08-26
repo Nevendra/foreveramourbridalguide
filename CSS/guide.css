@@ -165,10 +165,42 @@
         width: 100%;
         background-color: rgb(150, 150, 150);
     }
+    .socialMediaFooterIcons {
+        width: 80%;
+        margin: 0 auto;
+        height: 40px;
+    }
+    .socialLinkFooter{
+        float: left;
+        padding: 0px;
+        margin: 10px;
+        font-size: 0px;
+        line-height: 0px;
+        width: 30px;
+        height: 30px;
+        background-color: lightgrey;
+        border-radius: 50%;
+        border: solid 1px white;
+    }
+    .socialLinkFooter img {
+        width: 100%;
+    }
+    .contactFooter{
+        font-size: 12px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+    }
+    
+    footer{
+        background-color: lightgrey;
+    }
 
     .mainBodyImage img {
         width: 100%;
         padding-top: 10px;
+    }
+    .contentContainer {
+        padding: 0px 10px;
     }
 
 
