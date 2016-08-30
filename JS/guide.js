@@ -35,6 +35,7 @@ $(document).ready(function(){
 		} else {
 			$(".flipper").click(function(){
 	    	$(".flip-container").addClass("flip")
+	    	console.log("addclass")
 	    	})
 		}
 	}///end function imageFlip
