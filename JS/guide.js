@@ -23,28 +23,15 @@ $(document).ready(function(){
 
 
 	function imageFlip(){
-		var flipped = false;
-		if(windowWidth > 768){
-			$(".flipper").mouseenter(function(){
-	    		$(".flip-container").toggleClass("flip")
-	    		var newSource = $this.data('alt-src');
-	    	});
-	    	$(".flipper").mouseleave(function(){
-	    		$(".flip-container").toggleClass("flip")
-	    	});
+		$('.flip').click(function(){
+        if($(this).find('.card').hasClass('flipped')){
+        	$(this).find('.card').removeClass('flipped');
+        } else {
+        	$(this).find('.card').addClass('flipped');
+        }
+ 	});
 
-		} else {
-			$(".flipper").click(function(){
-	    	$(".flip-container").addClass("flip");
-	    	flipped = true; 
-	    	console.log(flipped);
-	    	});
-		}
 
-		// if(flipped === true) {
-		// 	$(this).find(".toBeFlipped").attr('src', 'Images/guideBrides/happyBride.jpg')
-	 //    	console.log(flipped);
-		// }
 	}///end function imageFlip
 	imageFlip();
 	
