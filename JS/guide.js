@@ -26,6 +26,7 @@ $(document).ready(function(){
 		if(windowWidth > 768){
 			$(".flipper").mouseenter(function(){
 	    		$(".flip-container").toggleClass("flip")
+	    		var newSource = $this.data('alt-src');
 	    	})
 	    	$(".flipper").mouseleave(function(){
 	    		$(".flip-container").toggleClass("flip")
