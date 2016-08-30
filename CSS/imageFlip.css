@@ -9,6 +9,7 @@
 
 .flip-container.flip .flipper {
 	transform: rotateY(180deg);
+	z-index: 3;
 }
 
 
