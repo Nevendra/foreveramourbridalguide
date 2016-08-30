@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 		} else {
 			$(".flipper").click(function(){
-	    	$(".flip-container").toggleClass("flip")
+	    	$(".flip-container").addClass("flip")
 	    	})
 		}
 	}///end function imageFlip
