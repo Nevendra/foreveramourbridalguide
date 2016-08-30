@@ -9,6 +9,9 @@
         margin: 0px;
         font-family: 'Open Sans', sans-serif;
         //Everything is open sans unless otherwise specified in the css, Makes it easier than having to declare it all the time.
+        margin:0;
+        padding:0;
+        height:100%;
     }
 
     h1{
@@ -197,22 +200,44 @@
         float: left;
         text-align: right;
     }
+
+    .Wrapper{
+        height:100%;
+        position:relative;
+    }
     
     footer{
         background-color: lightgrey;
         height: 70px;
+        width:100%;
+        height:100px;
+        position:absolute;
+        bottom:0;
+        left:0;
     }
     .mainTitle {
         padding: 0px;
         margin: 0px;
     }
 
-    .mainBodyImage img {
+    /*.mainBodyImage img {
         width: 100%;
         padding-top: 10px;
+    }*/
+
+    .mainBodyImage {
+        height: 300px;
+        background-size: cover;               
+        background-repeat: no-repeat;
+        background-position: 0 20%;  
+        background-attachment: fixed;
+        background-image: url('../Images/bnr-img_edited2.jpg');
     }
     .contentContainer p {
         padding: 0px 10px;
+    }
+    .contentContainer {
+        padding-bottom: 100px;
     }
      
     .stepOne div{
