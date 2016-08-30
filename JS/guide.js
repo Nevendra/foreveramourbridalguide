@@ -34,8 +34,9 @@ $(document).ready(function(){
 
 		} else {
 			$(".flipper").click(function(){
-	    	$(".flip-container").addClass("flip")
-	    	console.log("addclass")
+	    	$(".flip-container").addClass("flip");
+	    	$(this).find(".toBeFlipped").attr('src', 'Images/guideBrides/happyBride.jpg')
+	    	console.log($(this).find(".toBeFlipped"));
 	    	})
 		}
 	}///end function imageFlip
