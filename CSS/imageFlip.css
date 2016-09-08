@@ -199,14 +199,7 @@ p {
 }
 
 @media screen and (min-width: 400px) {
-    .flip {
-      width: 75%;
-    }
-
-    .slide {
-      width: 75%;
-    }
-
+  
     .squaredTwo {
       width: 100px;
       height: 100px;
