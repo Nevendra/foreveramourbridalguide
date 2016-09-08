@@ -26,7 +26,6 @@
     line-height: 200px;
 }
 .flip .card .front {
-  width: 100%;
   position: absolute;
   z-index: 1;
     background: black;
@@ -34,7 +33,6 @@
     cursor: pointer;
 }
 .flip .card .back {
-  width: 100%;
   -webkit-transform: rotatey(-180deg);
     background: blue;
     background: white;
@@ -63,23 +61,27 @@ p {
 }
 
 .slide {
-  width: 75%;
+  width: 70%;
   float: right;
-  height: 300px;
-  background-color: black;
+  height: auto;
   color: white;
   font-size: 3em;
   text-align: center;
+  padding-right: 5px;
+}
+.slideText {
+  height: 150px;
+  background-color: black;
 }
 .slide img {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 .imgDisplay {
   display: none;
 }
 .imgGallery {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   background-color: lightgrey;
 }
@@ -96,23 +98,23 @@ p {
 }
 
 .bigImg {
-  width: 80%;
-  height: 400px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
-  background-color: grey;
 }
 .bigImg img {
-  height: 100%;
+  height: auto;
   width: 100%;
   margin: 0 auto;
 }
 
 .flip {
   -webkit-perspective: 800;
-   width: 75%;
+   width: 70%;
    height: 300px;
     position: relative;
     float: right;
+    margin-right: 5px;
 }
 .flip .card.flipped {
   -webkit-transform: rotatey(-180deg);
@@ -146,22 +148,23 @@ p {
     cursor: pointer;
 }
 .card img {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
-.squaredTwo, .squaredThree, .squaredFour, .squaredFive{
-  width: 100px;
-  height: 100px;
+.squaredTwo {
+  width: 80px;
+  height: 80px;
   float: left;
   position: relative;
   background: #fcfff4;
   background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
   background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
   box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-left: 5px;
 }
-.squaredTwo label, .squaredThree label, .squaredFour label, .squaredFive label {
-  width: 86px;
-  height: 86px;
+.squaredTwo label {
+  width: 66px;
+  height: 66px;
   cursor: pointer;
   position: absolute;
   left: 7px;
@@ -170,13 +173,13 @@ p {
   background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white;
 }
-.squaredTwo label:after, .squaredThree label:after, .squaredFour label:after, .squaredFive label:after {
+.squaredTwo label:after {
   content: '';
   width: 50px;
   height: 25px;
   position: absolute;
-  top: 18px;
-  left: 15px;
+  top: 15px;
+  left: 7px;
   border: 10px solid #fcfff4;
   border-top: none;
   border-right: none;
@@ -185,12 +188,37 @@ p {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-.squaredTwo label:hover::after, .squaredThree label:hover::after, .squaredFour label:hover::after, .squaredFive label:hover::after {
+.squaredTwo label:hover::after {
   opacity: 0.3;
 }
-.squaredTwo input[type=checkbox], .squaredThree input[type=checkbox], .squaredFour input[type=checkbox], .squaredFive input[type=checkbox] {
+.squaredTwo input[type=checkbox] {
   visibility: hidden;
 }
-.squaredTwo input[type=checkbox]:checked + label:after, .squaredThree input[type=checkbox]:checked + label:after, .squaredFour input[type=checkbox]:checked + label:after, .squaredFive input[type=checkbox]  {
+.squaredTwo input[type=checkbox]:checked + label:after {
   opacity: 1;
+}
+
+@media screen and (min-width: 400px) {
+    .flip {
+      width: 75%;
+    }
+
+    .slide {
+      width: 75%;
+    }
+
+    .squaredTwo {
+      width: 100px;
+      height: 100px;
+    }
+
+    .squaredTwo label {
+      width: 86px;
+      height: 86px;
+    }
+
+    .squaredTwo label:after {
+      top: 18px;
+      left: 15px;
+    }
 }
