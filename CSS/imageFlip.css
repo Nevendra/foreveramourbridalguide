@@ -73,28 +73,31 @@ p {
   height: 150px;
   background-color: black;
 }
-.slide img {
-  width: 50px;
-  height: 50px;
+.imgDisplay img {
+  width: 20%;
+  height: 75px;
+  display: inline-block;
 }
+
 .imgDisplay {
   display: none;
 }
 .imgGallery {
   width: 100%;
-  margin: 0 auto;
   background-color: lightgrey;
+  margin-top: 5px;
 }
 
-.imgGallery ul{
+.imgDisplay ul{
   list-style-type: none; 
   padding: 0px;
   margin: 0px;
   padding-top: 10px;
+  text-align: center;
 }
 
-.imgGallery ul li {
-  display: inline-block;
+.imgDisplay ul li {
+  display: inline;
 }
 
 .bigImg {
@@ -197,6 +200,7 @@ p {
 .squaredTwo input[type=checkbox]:checked + label:after {
   opacity: 1;
 }
+
 
 @media screen and (min-width: 400px) {
   
