@@ -56,8 +56,7 @@ $(document).ready(function(){
 		        } else {
 		        	box.find('.imgGallery').addClass('slideImg');
 		        	if(box.find('.imgGallery').hasClass('slideImg')) {
-		        		$(box.find('.imgGallery')).animate({height: '700px'}, 'slow')
-		        		$(box.find('.slide')).animate({height: '800px'}, 'slow', showImgGallery(box));
+		        		$(box.find('.imgDisplay')).slideToggle();
 		        	}
 		        	$(this).attr('disabled', true)
 		        }
