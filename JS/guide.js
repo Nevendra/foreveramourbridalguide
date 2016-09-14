@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	var windowWidth = $(window).width();
-	
+////////////////// navagation/////////	
 	function toggleNav() {
 		$('nav').slideToggle()
 	};
@@ -14,7 +14,7 @@ $(document).ready(function(){
         console.log($(this).parent().parent().children('.dropdown'));
     });
 
-
+/////////// check box///////////////////
 	var ckbox = $('#squaredTwo');
 
 	$('input').on('click',function () {
@@ -44,6 +44,8 @@ $(document).ready(function(){
 	        }
 	    });
 
+///////// gallery ////////////
+
 	function showImgGallery(box) {
 		$(box.find('.imgDisplay')).fadeIn(3000);
 	}
@@ -53,6 +55,7 @@ $(document).ready(function(){
 			$(thumb.find('.bigImg').children()).attr("src", $(this).attr("src"));
 		});
 
+/////////// guide step ///////////
 	function guideStep() {
 		var stepCounter = 0;
 		var steps = $(".contentContainer .guideSteps")
@@ -62,28 +65,40 @@ $(document).ready(function(){
 		steps.hide();
 		steps.eq(stepCounter).show();
 
-		// var all_checkboxes = $(currentStep + 'input[type="checkbox"]');
-
-		// if (currentInput.length === currentInput.filter(":checked").length) {
-		//   alert('they are all checked');
-		// }
-
 		steps.css("background-color", "blue")
 
 		$('.nextStep').click(function(){
-			steps.eq(stepCounter).hide();
-			stepCounter = stepCounter + 1;
-			steps.eq(stepCounter).show();
-			currentStep = steps.eq(stepCounter);
-			currentInput = currentStep.find('input[type="checkbox"]')
-			console.log(currentStep);
-			console.log(currentInput);
-			console.log(stepCounter);
-			if(stepCounter % 2 === 0) {
-			steps.css("background-color", "blue")
-			} else {
-				steps.css("background-color", "green");
+			function transitionToNextStep(){
+				steps.eq(stepCounter).hide();
+				stepCounter = stepCounter + 1;
+				steps.eq(stepCounter).show();
+				currentStep = steps.eq(stepCounter);
+				currentInput = currentStep.find('input[type="checkbox"]')
+				console.log(currentStep);
+				console.log(currentInput);
+				console.log(stepCounter);
+				if(stepCounter % 2 === 0) {
+				steps.css("background-color", "blue")
+				} else {
+					steps.css("background-color", "green");
+				};
 			}
+
+			////////// transition animation//////
+
+				$(".transitionAnimation").css("display", "block");
+					function fades(){
+						$(".animationImage").fadeIn(2000, function(){
+							$(".animationImage").fadeOut(3000, function(){
+								transitionToNextStep();
+								$('.animationLeft').animate({left: "-50%"}, 500);
+								$('.animationRight').animate({right: "-50%"}, 500);
+								$(".transitionAnimation").stop().fadeOut(1000);
+							});/////// end of fade out
+						});/////end of fadeIn
+					}//// end of fades
+					$('.animationLeft').animate({left: "0px"}, 500);
+					$('.animationRight').animate({right: "0px"}, 500, fades);
 
 		})
 
