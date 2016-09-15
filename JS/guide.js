@@ -97,7 +97,7 @@ $(document).ready(function(){
 						});/////end of fadeIn
 					}//// end of fades
 					$('.animationLeft').animate({left: "0px"}, 500);
-					$('.animationRight').animate({right: "0px"}, 500, fades);
+					$('.animationRight').animate({right: "0px"}, 500);
 
 		})
 
