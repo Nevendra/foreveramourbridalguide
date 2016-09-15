@@ -68,15 +68,14 @@ $(document).ready(function(){
 		steps.css("background-color", "blue")
 
 		$('.nextStep').click(function(){
+			$("body").css("overflow-y", "hidden");
 			function transitionToNextStep(){
 				steps.eq(stepCounter).hide();
 				stepCounter = stepCounter + 1;
 				steps.eq(stepCounter).show();
 				currentStep = steps.eq(stepCounter);
 				currentInput = currentStep.find('input[type="checkbox"]')
-				console.log(currentStep);
-				console.log(currentInput);
-				console.log(stepCounter);
+				$("body").css("overflow-y", "auto");
 				if(stepCounter % 2 === 0) {
 				steps.css("background-color", "blue")
 				} else {
