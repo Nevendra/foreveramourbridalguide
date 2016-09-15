@@ -135,7 +135,7 @@
     .animationLeft {
       width: 50%;
       height: 100vh;
-      background-color: red;
+      background-color: gray;
       position: absolute;
       left: -50%;
     }
@@ -143,9 +143,9 @@
     .animationRight {
       width: 50%;
       height: 100vh;
-      background-color: blue;
+      background-color: yellow;
       position: absolute;
-      right: -50%;
+      right: -100%;
     }
     .animationImage {
       position: absolute;
