@@ -86,6 +86,7 @@ $(document).ready(function(){
 			////////// transition animation//////
 
 				$(".transitionAnimation").css("display", "block");
+				transitionToNextStep();
 					function fades(){
 						$(".animationImage").fadeIn(2000, function(){
 							$(".animationImage").fadeOut(3000, function(){
@@ -96,8 +97,8 @@ $(document).ready(function(){
 							});/////// end of fade out
 						});/////end of fadeIn
 					}//// end of fades
-					// $('.animationRight').animate({right: "0px"}, 500);
-					// $('.animationLeft').animate({left: "0px"}, 500);
+					$('.animationRight').animate({right: "0px"}, 500);
+					$('.animationLeft').animate({left: "0px"}, 500, fades);
 
 		})
 
