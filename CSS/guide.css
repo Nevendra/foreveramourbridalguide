@@ -145,7 +145,7 @@
       height: 100vh;
       background-color: yellow;
       position: absolute;
-      right: -100%;
+      right: -50%;
     }
     .animationImage {
       position: absolute;

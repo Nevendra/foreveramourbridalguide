@@ -91,13 +91,13 @@ $(document).ready(function(){
 							$(".animationImage").fadeOut(3000, function(){
 								transitionToNextStep();
 								$('.animationLeft').animate({left: "-50%"}, 500);
-								$('.animationRight').animate({right: "-100%"}, 500);
+								$('.animationRight').animate({right: "-50%"}, 500);
 								$(".transitionAnimation").stop().fadeOut(1000);
 							});/////// end of fade out
 						});/////end of fadeIn
 					}//// end of fades
-					$('.animationLeft').animate({left: "0px"}, 500);
-					$('.animationRight').animate({right: "0px"}, 500);
+					// $('.animationRight').animate({right: "0px"}, 500);
+					// $('.animationLeft').animate({left: "0px"}, 500);
 
 		})
 
