@@ -8,6 +8,7 @@ p {
   padding: 0px;
   
 }
+
 .clear {
   clear: both;
 }
@@ -115,11 +116,12 @@ p {
 
 .box5{
   background-color: #9ED9EB;
+  height: 190px;
 }
 .box6{
   background-color: #9EB3EB;
   width: 90%;
-  height: 320px;
+  height: 220px;
 }
 
 .shadow5,.shadow6 {
@@ -133,21 +135,27 @@ p {
 .shadow5 p, .shadow6 p {
   width:87%;
   margin-left:6%;
-  border:2px dashed #F7EEEE;
+ /* border:2px dashed #F7EEEE;*/
   border-radius:5px;
   padding: 5px;
-  font-size: 12px;
-  text-align: center;
+  font-size: 17px;
+  text-align: left;
   line-height: 20px;
+  color: white;
 }
 
 .shadow5 p {
-  height:130px;
+  height:150px;
 }
 
 .shadow6 p {
-  height: 300px;
+  height: 200px;
 }
+
+.guideThreeCheckOne p {
+  line-height: 15px;
+}
+
 .shadow5:before, .shadow5:after{
   content:"";
   position: absolute;
@@ -176,10 +184,11 @@ p {
 .flip {
   -webkit-perspective: 800;
    width: 70%;
-   height: 340px;
+   height: 240px;
     position: relative;
     float: right;
 }
+
 .flip .card.flipped {
   -webkit-transform: rotatey(-180deg);
 }
@@ -201,7 +210,6 @@ p {
 .flip .card .front {
   position: absolute;
   z-index: 1;
-    color: white;
     cursor: pointer;
 }
 .flip .card .back {

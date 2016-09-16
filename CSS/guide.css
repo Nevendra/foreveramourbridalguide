@@ -44,6 +44,11 @@
     
     }
 
+    a{
+        padding: 0px;
+        margin: 0px;
+    }
+
     .mobileLogoDiv {
         width: 100%;
         text-align: center;
