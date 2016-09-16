@@ -121,13 +121,6 @@
         font-size: 15px;
     }
 
-    .allChecked {
-        display: none;
-        height: 300px;
-        width: 100px;
-        background-color: pink;
-    }
-
     .transitionAnimation {
       position: fixed;
       width: 100%;
