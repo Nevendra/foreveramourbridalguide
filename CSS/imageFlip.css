@@ -8,6 +8,7 @@ p {
   padding: 0px;
   
 }
+
 .clear {
   clear: both;
 }
@@ -115,6 +116,7 @@ p {
 
 .box5{
   background-color: #9ED9EB;
+  height: 190px;
 }
 .box6{
   background-color: #9EB3EB;
@@ -133,17 +135,17 @@ p {
 .shadow5 p, .shadow6 p {
   width:87%;
   margin-left:6%;
-  border:2px dashed #F7EEEE;
+ /* border:2px dashed #F7EEEE;*/
   border-radius:5px;
   padding: 5px;
-  font-size: 12px;
-  text-align: center;
+  font-size: 17px;
+  text-align: left;
   line-height: 20px;
   color: white;
 }
 
 .shadow5 p {
-  height:130px;
+  height:150px;
 }
 
 .shadow6 p {
