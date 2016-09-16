@@ -15,45 +15,69 @@ $(document).ready(function(){
     });
 
 /////////// check box///////////////////
+	// var ckbox = $('#squaredTwo');
+
+	// $('input').on('click',function () {
+	// 		var box = $(this).parent().parent().parent();
+	//         if ($(this).is(':checked') && $(this).hasClass('flipBox')) {
+	// 	        if(box.find('.card').hasClass('flipped')){
+	// 	        	box.find('.card').removeClass('flipped');
+	// 	        } else {
+	// 	        	box.find('.card').addClass('flipped');
+	// 	        	$(this).attr('disabled', true)
+	// 	        }
+	//         }
+	//     });
+
+	// $('input').on('click',function () {
+	// 		var box = $(this).parent().parent().parent();
+	//         if ($(this).is(':checked') && $(this).hasClass('slideBox')) {
+	// 	        if(box.find('.imgGallery').hasClass('slideImg')){
+	// 	        	box.find('.imgGallery').removeClass('slideImg');
+	// 	        } else {
+	// 	        	box.find('.imgGallery').addClass('slideImg');
+	// 	        	if(box.find('.imgGallery').hasClass('slideImg')) {
+	// 	        		$(box.find('.imgDisplay')).slideToggle();
+	// 	        	}
+	// 	        	$(this).attr('disabled', true)
+	// 	        }
+	//         }
+	//     });
+
 	var ckbox = $('#squaredTwo');
 
-	$('input').on('click',function () {
-			var box = $(this).parent().parent().parent();
-	        if ($(this).is(':checked') && $(this).hasClass('flipBox')) {
-		        if(box.find('.card').hasClass('flipped')){
-		        	box.find('.card').removeClass('flipped');
-		        } else {
-		        	box.find('.card').addClass('flipped');
-		        	$(this).attr('disabled', true)
-		        }
-	        }
-	    });
 
 	$('input').on('click',function () {
-			var box = $(this).parent().parent().parent();
-	        if ($(this).is(':checked') && $(this).hasClass('slideBox')) {
-		        if(box.find('.imgGallery').hasClass('slideImg')){
-		        	box.find('.imgGallery').removeClass('slideImg');
-		        } else {
-		        	box.find('.imgGallery').addClass('slideImg');
-		        	if(box.find('.imgGallery').hasClass('slideImg')) {
-		        		$(box.find('.imgDisplay')).slideToggle();
-		        	}
-		        	$(this).attr('disabled', true)
-		        }
-	        }
+			var box = $(this).parent().parent().parent().parent();
+			if($(this).hasClass('slideBox')){
+				$(box.find('.slide')).slideToggle("slow", showImgGallery(box));
+				$(this).attr('disabled', true)
+			} else if ($(this).hasClass('flipBox')){
+				box.find('.card').addClass('flipped')
+			}
 	    });
-
-///////// gallery ////////////
 
 	function showImgGallery(box) {
+		console.log("hey")
 		$(box.find('.imgDisplay')).fadeIn(3000);
 	}
 
+///////// gallery ////////////
+
+	// function showImgGallery(box) {
+	// 	$(box.find('.imgDisplay')).fadeIn(3000);
+	// }
+
+	// $(".thumbnail").click(function(){
+	// 		var thumb = $(this).parent().parent().parent()
+	// 		$(thumb.find('.bigImg').children()).attr("src", $(this).attr("src"));
+	// 	});
+
 	$(".thumbnail").click(function(){
-			var thumb = $(this).parent().parent().parent()
-			$(thumb.find('.bigImg').children()).attr("src", $(this).attr("src"));
-		});
+		var thumb = $(this).parent().parent().parent()
+		$(thumb.find('.bigImg').children()).attr("src", $(this).attr("src"));
+		console.log($(this).attr("src"));
+	});
 
 /////////// guide step ///////////
 	function guideStep() {
@@ -65,7 +89,7 @@ $(document).ready(function(){
 		steps.hide();
 		steps.eq(stepCounter).show();
 
-		steps.css("background-color", "blue")
+		// steps.css("background-color", "blue")
 
 		$('.nextStep').click(function(){
 			$("body").css("overflow-y", "hidden");
@@ -76,11 +100,11 @@ $(document).ready(function(){
 				currentStep = steps.eq(stepCounter);
 				currentInput = currentStep.find('input[type="checkbox"]')
 				$("body").css("overflow-y", "auto");
-				if(stepCounter % 2 === 0) {
-				steps.css("background-color", "blue")
-				} else {
-					steps.css("background-color", "green");
-				};
+				// if(stepCounter % 2 === 0) {
+				// steps.css("background-color", "blue")
+				// } else {
+				// 	steps.css("background-color", "green");
+				// };
 			}
 
 			////////// transition animation//////
@@ -91,13 +115,13 @@ $(document).ready(function(){
 							$(".animationImage").fadeOut(3000, function(){
 								transitionToNextStep();
 								$('.animationLeft').animate({left: "-50%"}, 500);
-								$('.animationRight').animate({right: "-100%"}, 500);
+								$('.animationRight').animate({right: "-50%"}, 500);
 								$(".transitionAnimation").stop().fadeOut(1000);
 							});/////// end of fade out
 						});/////end of fadeIn
 					}//// end of fades
-					$('.animationLeft').animate({left: "0px"}, 500);
 					$('.animationRight').animate({right: "0px"}, 500);
+					$('.animationLeft').animate({left: "0px"}, 500, fades);
 
 		})
 
