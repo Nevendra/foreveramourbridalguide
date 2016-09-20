@@ -48,6 +48,9 @@
         padding: 0px;
         margin: 0px;
     }
+    .break {
+        margin-bottom: 10px;
+    }
 
     .mobileLogoDiv {
         width: 100%;
@@ -121,9 +124,6 @@
     .introMessage div{
         width: 100%;
     }
-    .introMessageText_Img {
-        margin-bottom: 10px;
-    }
     .introMessageText_Img img{
         width: 50%;
     }
@@ -131,9 +131,9 @@
         width: 45%;
         margin: 0px;
         padding: 5px;
-        font-size: 15px;
+        font-size: 20px;
         text-align: center;
-        color: lightpink;
+        color: #1db2a3;
     }
     .introLeftImg {
         float: left;
