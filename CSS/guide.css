@@ -118,19 +118,20 @@
         padding-top: 10px;
         box-shadow:inset 0 15px 7px -16px #111;
     }
-    .guideSteps {
-       /* background-color: white;*/
-    }
+  /*  .intro {
+        background-color: white;
+    }*/
      
     .introMessage div{
         width: 100%;
     }
     .introMessageText_Img {
-
+        background-color: white;
     }
     .introMessageText_Img img{
         width: 50%;
         height: 150px;
+        border: solid 1px white;
     }
     .introMessageText_Img p {
         width: 45%;
