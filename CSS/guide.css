@@ -12,7 +12,7 @@
         margin:0;
         padding:0;
         height:100%;
-        background-color: lightgrey;
+        background-color: #E8E8E8;
     }
 
     h1{
@@ -121,8 +121,8 @@
         padding-top: 10px;
         box-shadow:inset 0 15px 7px -16px #111;
     }
- /*   .intro {
-        background-color: white;
+   /* .intro {
+        background-color: #E8E8E8;
     }*/
      
     .introMessage div{
