@@ -52,6 +52,9 @@
     .break {
         margin-bottom: 10px;
     }
+/*    .navAndTitle {
+        background-color: lightgrey;
+    }*/
     .mobileLogoDiv {
         width: 100%;
         text-align: center;
@@ -118,9 +121,9 @@
         padding-top: 10px;
         box-shadow:inset 0 15px 7px -16px #111;
     }
-    .intro {
+ /*   .intro {
         background-color: white;
-    }
+    }*/
      
     .introMessage div{
         width: 100%;
@@ -139,7 +142,8 @@
         padding: 5px;
         font-size: 20px;
         text-align: center;
-        color: #1db2a3;
+        /*color: #1db2a3;*/
+        color: lightpink;
     }
     .introLeftImg {
         float: left;
