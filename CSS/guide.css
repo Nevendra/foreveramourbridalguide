@@ -69,7 +69,7 @@
         //line-height: 32px;
         padding: 6px 0px 0px 5px;
         text-align: center;
-         text-decoration: none;
+        text-decoration: none;
     }
     .hamburgerMenu {
         text-align: center;
@@ -118,19 +118,20 @@
         padding-top: 10px;
         box-shadow:inset 0 15px 7px -16px #111;
     }
-    .guideSteps {
+  /*  .intro {
         background-color: white;
-    }
+    }*/
      
     .introMessage div{
         width: 100%;
     }
     .introMessageText_Img {
-
+        background-color: white;
     }
     .introMessageText_Img img{
         width: 50%;
         height: 150px;
+        border: solid 1px white;
     }
     .introMessageText_Img p {
         width: 45%;
