@@ -99,7 +99,7 @@
     .mainTitle {
         border-top: 1px white solid;
         /*color: #1db2a3;*/
-        color: #9EB3EB;
+        color: lightpink;
         margin-bottom: 5px;
         box-shadow: 0 4px 2px -2px gray;
         padding-bottom: 5px;
@@ -121,7 +121,7 @@
     .introMessage div{
         width: 100%;
     }
-    .introMessageText_Img img {
+    .introMessageText_Img img{
         float: left;
         width: 50%;
     }
