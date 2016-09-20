@@ -97,14 +97,17 @@
     }
     
     .mainTitle {
-        border: 1px white solid;
-        color: #1db2a3;
-        padding: 5px;
+        border-top: 1px white solid;
+        /*color: #1db2a3;*/
+        color: #9EB3EB;
         margin-bottom: 5px;
+        box-shadow: 0 4px 2px -2px gray;
+        padding-bottom: 5px;
     }
     .mainTitle p {
         font-size: 30px;
         font-weight: bolder;
+        margin: 5px 0px;
     }
     .contentContainer p {
         padding: 0px 10px;
@@ -115,14 +118,14 @@
         box-shadow:inset 0 15px 7px -16px #111;
     }
      
-    .stepOne div{
+    .introMessage div{
         width: 100%;
     }
-    .floatImgText img {
+    .introMessageText_Img img {
         float: left;
         width: 50%;
     }
-    .floatImgText p {
+    .introMessageText_Img p {
         float: left;
         width: 50%;
         margin: 0px;
