@@ -100,7 +100,7 @@
         border-top: 1px white solid;
         /*color: #1db2a3;*/
         color: lightpink;
-        margin-bottom: 5px;
+        margin-bottom: 20px;
         box-shadow: 0 4px 2px -2px gray;
         padding-bottom: 5px;
     }
@@ -121,18 +121,44 @@
     .introMessage div{
         width: 100%;
     }
+    .introMessageText_Img {
+        padding-bottom: 5px;
+    }
     .introMessageText_Img img{
-        float: left;
         width: 50%;
     }
     .introMessageText_Img p {
-        float: left;
-        width: 50%;
+        width: 45%;
         margin: 0px;
         padding: 5px;
         font-size: 15px;
+        text-align: center;
+        color: lightpink;
     }
-
+    .introLeftImg {
+        float: left;
+    }
+    .introRightImg {
+        float: right;
+    }
+    .introLeftText {
+        float: right;
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+        border-bottom: 1px solid white;
+        /*border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;*/
+        /*border-radius: 25px;*/
+    }
+    .introRightText {
+        float: left;
+        border-top: 1px solid white;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+   /*     border-top-right-radius: 25px; 
+        border-bottom-right-radius: 25px;*/
+       /* border-radius: 25px;*/
+    }
     .transitionAnimation {
       position: fixed;
       width: 100%;
