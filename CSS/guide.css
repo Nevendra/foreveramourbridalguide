@@ -82,6 +82,9 @@
      .mainTitle {
         padding: 0px;
         margin: 0px;
+        font-family: "Great Vibes", sans-serif;
+        font-size: 25px;
+        text-align: center;
     }
 
     .mainBodyImage {
@@ -92,11 +95,16 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
-
-   /* .mainBodyImage img{
-        height: 200px;
-        width: 100%;
-    }*/
+    
+    .mainTitle {
+        border: 1px white solid;
+        color: #1db2a3;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .mainTitle p {
+        font-size: 25px;
+    }
     .contentContainer p {
         padding: 0px 10px;
     }
