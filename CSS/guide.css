@@ -103,7 +103,8 @@
         margin-bottom: 5px;
     }
     .mainTitle p {
-        font-size: 25px;
+        font-size: 30px;
+        font-weight: bolder;
     }
     .contentContainer p {
         padding: 0px 10px;
