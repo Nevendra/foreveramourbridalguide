@@ -126,6 +126,7 @@
     }
     .introMessageText_Img img{
         width: 50%;
+        height: 150px;
     }
     .introMessageText_Img p {
         width: 45%;
@@ -144,16 +145,16 @@
     .introLeftText {
         float: right;
         border-top: 1px solid white;
-        border-left: 1px solid white;
-        border-bottom: 1px solid white;
+     /*   border-left: 1px solid white;
+        border-bottom: 1px solid white;*/
         /*border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;*/
         /*border-radius: 25px;*/
     }
     .introRightText {
         float: left;
-        border-top: 1px solid white;
-        border-right: 1px solid white;
+     /*   border-top: 1px solid white;
+        border-right: 1px solid white;*/
         border-bottom: 1px solid white;
    /*     border-top-right-radius: 25px; 
         border-bottom-right-radius: 25px;*/
