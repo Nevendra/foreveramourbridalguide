@@ -124,6 +124,21 @@
    /* .intro {
         background-color: #E8E8E8;
     }*/
+
+    .stepTitle {
+      text-align: center;
+      width: 100%; 
+      background-color: lightblue;
+      margin-bottom: 10px;
+      border-top: solid 1px white;
+      border-bottom: solid 1px white;
+      box-shadow: 0 4px 2px -2px gray;
+    }
+    .stepTitle p {
+      font-size: 24px;
+      color: white;
+      margin: 5px 0px;
+    }
      
     .introMessage {
         width: 100%;
@@ -381,12 +396,15 @@
     slow transition dropdowns end
     ********************************/
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 330px) {
     .mainTitle p {
         font-size: 30px;
     }
       .yesMessage p {
-        font-size: 30px;
+        font-size: 25px;
+    }
+    .stepTitle p {
+      font-size: 30px;
     }
 }  
 
