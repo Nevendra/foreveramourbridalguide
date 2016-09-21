@@ -11,7 +11,6 @@ $(document).ready(function(){
 
 	$('.downArrowIcon').click(function(){
         $(this).parent().parent().children('.dropdown').slideToggle();
-        console.log($(this).parent().parent().children('.dropdown'));
     });
 
 	$('input').on('click',function () {
@@ -25,7 +24,6 @@ $(document).ready(function(){
 	    });
 
 	function showImgGallery(box) {
-		console.log("hey")
 		$(box.find('.imgDisplay')).fadeIn(3000);
 	}
 
@@ -34,12 +32,11 @@ $(document).ready(function(){
 	$(".thumbnail").click(function(){
 		var thumb = $(this).parent().parent().parent()
 		$(thumb.find('.bigImg').children()).attr("src", $(this).attr("src"));
-		console.log($(this).attr("src"));
 	});
 
 /////////// guide step ///////////
 	function guideStep() {
-		var stepCounter = 6;
+		var stepCounter = 0;
 		var steps = $(".contentContainer .guideSteps")
 		var currentStep = steps.eq(stepCounter);
 		var currentInput = currentStep.find('input[type="checkbox"]')
@@ -50,12 +47,22 @@ $(document).ready(function(){
 		$('.nextStep').click(function(){
 			$("body").css("overflow-y", "hidden");
 			function transitionToNextStep(){
-				steps.eq(stepCounter).hide();
-				stepCounter = (stepCounter + 1) % steps.length;
-				steps.eq(stepCounter).show();
-				currentStep = steps.eq(stepCounter);
-				currentInput = currentStep.find('input[type="checkbox"]')
-				$("body").css("overflow-y", "auto");
+				if(stepCounter === steps.length - 1) {
+					steps.eq(stepCounter).hide();
+					stepCounter = 1;
+					steps.eq(stepCounter).show();
+					currentStep = steps.eq(stepCounter);
+					currentInput = currentStep.find('input[type="checkbox"]')
+					$("body").css("overflow-y", "auto");
+				} else {
+					steps.eq(stepCounter).hide();
+					stepCounter = (stepCounter + 1) % steps.length;
+					steps.eq(stepCounter).show();
+					currentStep = steps.eq(stepCounter);
+					currentInput = currentStep.find('input[type="checkbox"]')
+					$("body").css("overflow-y", "auto");
+				}
+				
 			}
 
 			////////// transition animation//////
@@ -80,7 +87,6 @@ $(document).ready(function(){
 				currentInput.change(function(){
 			    if(currentInput.length == currentInput.filter(":checked").length){
 			       var allchecked = currentStep.find('.allChecked');
-			       console.log(allchecked);
 			   		allchecked.css("display", "block");
 			    }
 			});
