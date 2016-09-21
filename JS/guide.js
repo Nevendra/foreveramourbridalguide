@@ -71,8 +71,8 @@ $(document).ready(function(){
 							});/////// end of fade out
 						});/////end of fadeIn
 					}//// end of fades
-					$('.animationRight').animate({right: "0px"}, 500);
-					$('.animationLeft').animate({left: "0px"}, 500, fades);
+					$('.animationRight').animate({right: "0%"}, 500);
+					$('.animationLeft').animate({left: "0%"}, 500, fades);
 
 		})
 
