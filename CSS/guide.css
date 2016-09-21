@@ -194,6 +194,8 @@
       height: 100vh;
       display: none;
       z-index: 20;
+      top: 0;
+      left: 0px;
     }
     .animationLeft {
       width: 50%;
@@ -206,7 +208,7 @@
     .animationRight {
       width: 50%;
       height: 100vh;
-      background-color: blue;
+      background-color: black;
       position: absolute;
       right: -50%;
     }
