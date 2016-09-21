@@ -183,16 +183,15 @@
         background-color: lightpink;
         margin: 10px 0px;
         box-shadow: 0 5px 2px -2px gray;
+        padding: 5px;
     }
     .yesMessage p {
-        font-size: 15px;
+        font-size: 20px;
     }
     .transitionAnimation {
       position: fixed;
       width: 100%;
       height: 100vh;
-      top: 0px;
-      left: 0px;
       display: none;
       z-index: 20;
     }
@@ -201,15 +200,15 @@
       height: 100vh;
       background-color: black;
       position: absolute;
-      left: -50%;
+      left: -50px;
     }
 
     .animationRight {
       width: 50%;
       height: 100vh;
-      background-color: black;
+      background-color: blue;
       position: absolute;
-      right: -50%;
+      right: -50px;
     }
     .animationImage {
       position: absolute;
