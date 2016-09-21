@@ -385,5 +385,8 @@
     .mainTitle p {
         font-size: 30px;
     }
+      .yesMessage p {
+        font-size: 30px;
+    }
 }  
 
