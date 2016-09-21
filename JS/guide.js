@@ -39,7 +39,7 @@ $(document).ready(function(){
 
 /////////// guide step ///////////
 	function guideStep() {
-		var stepCounter = 0;
+		var stepCounter = 6;
 		var steps = $(".contentContainer .guideSteps")
 		var currentStep = steps.eq(stepCounter);
 		var currentInput = currentStep.find('input[type="checkbox"]')
@@ -51,7 +51,7 @@ $(document).ready(function(){
 			$("body").css("overflow-y", "hidden");
 			function transitionToNextStep(){
 				steps.eq(stepCounter).hide();
-				stepCounter = stepCounter + 1;
+				stepCounter = (stepCounter + 1) % steps.length;
 				steps.eq(stepCounter).show();
 				currentStep = steps.eq(stepCounter);
 				currentInput = currentStep.find('input[type="checkbox"]')
