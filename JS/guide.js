@@ -14,39 +14,6 @@ $(document).ready(function(){
         console.log($(this).parent().parent().children('.dropdown'));
     });
 
-/////////// check box///////////////////
-	// var ckbox = $('#squaredTwo');
-
-	// $('input').on('click',function () {
-	// 		var box = $(this).parent().parent().parent();
-	//         if ($(this).is(':checked') && $(this).hasClass('flipBox')) {
-	// 	        if(box.find('.card').hasClass('flipped')){
-	// 	        	box.find('.card').removeClass('flipped');
-	// 	        } else {
-	// 	        	box.find('.card').addClass('flipped');
-	// 	        	$(this).attr('disabled', true)
-	// 	        }
-	//         }
-	//     });
-
-	// $('input').on('click',function () {
-	// 		var box = $(this).parent().parent().parent();
-	//         if ($(this).is(':checked') && $(this).hasClass('slideBox')) {
-	// 	        if(box.find('.imgGallery').hasClass('slideImg')){
-	// 	        	box.find('.imgGallery').removeClass('slideImg');
-	// 	        } else {
-	// 	        	box.find('.imgGallery').addClass('slideImg');
-	// 	        	if(box.find('.imgGallery').hasClass('slideImg')) {
-	// 	        		$(box.find('.imgDisplay')).slideToggle();
-	// 	        	}
-	// 	        	$(this).attr('disabled', true)
-	// 	        }
-	//         }
-	//     });
-
-	var ckbox = $('#squaredTwo');
-
-
 	$('input').on('click',function () {
 			var box = $(this).parent().parent().parent().parent();
 			if($(this).hasClass('slideBox')){
@@ -64,15 +31,6 @@ $(document).ready(function(){
 
 ///////// gallery ////////////
 
-	// function showImgGallery(box) {
-	// 	$(box.find('.imgDisplay')).fadeIn(3000);
-	// }
-
-	// $(".thumbnail").click(function(){
-	// 		var thumb = $(this).parent().parent().parent()
-	// 		$(thumb.find('.bigImg').children()).attr("src", $(this).attr("src"));
-	// 	});
-
 	$(".thumbnail").click(function(){
 		var thumb = $(this).parent().parent().parent()
 		$(thumb.find('.bigImg').children()).attr("src", $(this).attr("src"));
@@ -89,8 +47,6 @@ $(document).ready(function(){
 		steps.hide();
 		steps.eq(stepCounter).show();
 
-		// steps.css("background-color", "blue")
-
 		$('.nextStep').click(function(){
 			$("body").css("overflow-y", "hidden");
 			function transitionToNextStep(){
@@ -100,11 +56,6 @@ $(document).ready(function(){
 				currentStep = steps.eq(stepCounter);
 				currentInput = currentStep.find('input[type="checkbox"]')
 				$("body").css("overflow-y", "auto");
-				// if(stepCounter % 2 === 0) {
-				// steps.css("background-color", "blue")
-				// } else {
-				// 	steps.css("background-color", "green");
-				// };
 			}
 
 			////////// transition animation//////
@@ -120,8 +71,8 @@ $(document).ready(function(){
 							});/////// end of fade out
 						});/////end of fadeIn
 					}//// end of fades
-					$('.animationRight').animate({right: "0px"}, 500);
-					$('.animationLeft').animate({left: "0px"}, 500, fades);
+					$('.animationRight').animate({right: "0%"}, 500);
+					$('.animationLeft').animate({left: "0%"}, 500, fades);
 
 		})
 
