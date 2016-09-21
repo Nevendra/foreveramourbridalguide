@@ -32,20 +32,6 @@ a {
 .allChecked a {
   color: white;
 }
-.stepTitle {
-  text-align: center;
-  width: 100%; 
-  background-color: lightblue;
-  margin-bottom: 10px;
-  border-top: solid 1px white;
-  /*border-bottom: solid 1px darkblue;*/
-  box-shadow: 0 4px 2px -2px gray;
-}
-.stepTitle p {
-  font-size: 24px;
-  color: white;
-  margin: 5px 0px;
-}
 .allChecked p {
   font-size: 24px;
   color: white;
