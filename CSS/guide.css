@@ -110,7 +110,7 @@
         background-color: lightpink;
     }
     .mainTitle p {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: bold;
         margin: 5px 0px;
     }
@@ -670,6 +670,11 @@
         background-color: #A57C52;
     }*/
 
+}
+@media screen and (min-width: 400px) {
+    .mainTitle p {
+        font-size: 30px;
+    }
 }
 @media only screen and (min-width: 768px) {
    /* html {
