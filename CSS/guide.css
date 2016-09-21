@@ -164,6 +164,24 @@
       color: white;
       margin: 5px 0px;
     }
+    .guideIntro {
+        width: 100%; 
+    }
+    .guideIntro img {
+        width: 100%;
+        border: solid 3px #1db2a3; 
+    }
+    .guideIntro p {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        border: solid 3px white;
+        background-color: #1db2a3;
+        color: white;
+        margin-bottom: 10px;
+    }
      
     .introMessage {
         width: 100%;
@@ -430,6 +448,10 @@
     }
     .stepTitle p {
       font-size: 30px;
+    }
+
+    .guideIntro p {
+        font-size: 25px;
     }
 }  
 
