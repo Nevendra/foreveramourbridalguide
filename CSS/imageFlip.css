@@ -141,14 +141,14 @@ a {
 }
 
 .shadow5 p, .shadow6 p {
-  width:87%;
+  width:95%;
   margin-left:6%;
  /* border:2px dashed #F7EEEE;*/
   border-radius:5px;
-  padding: 5px;
-  font-size: 17px;
+  padding: 3px;
+  font-size: 18px;
   text-align: left;
-  line-height: 30px;
+  line-height: 25px;
   font-weight: bold;
   color: white;
 }
@@ -233,7 +233,7 @@ a {
 }
 .flip p {
   padding: 5px;
-  font-size: 17px;
+  font-size: 18px;
   text-align: left;
   line-height: 30px;
   font-weight: bold;
