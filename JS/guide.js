@@ -19,7 +19,8 @@ $(document).ready(function(){
 				$(box.find('.slide')).slideToggle("slow", showImgGallery(box));
 				$(this).attr('disabled', true)
 			} else if ($(this).hasClass('flipBox')){
-				box.find('.card').addClass('flipped')
+				box.find('.card').addClass('flipped');
+				$(this).attr('disabled', true);
 			}
 	    });
 
@@ -36,7 +37,7 @@ $(document).ready(function(){
 
 /////////// guide step ///////////
 	function guideStep() {
-		var stepCounter = 2;
+		var stepCounter = 0;
 		var steps = $(".contentContainer .guideSteps")
 		var currentStep = steps.eq(stepCounter);
 		var currentInput = currentStep.find('input[type="checkbox"]')
@@ -93,7 +94,7 @@ $(document).ready(function(){
 		});
 
 	}
-	 guideStep();
+	 // guideStep();
 
 
 });
