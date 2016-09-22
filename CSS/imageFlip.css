@@ -123,11 +123,11 @@ a {
 
 
 .box5{
-  background-color: #9EB3EB;
+  background-color: #1db2a3;
   height: 190px;
 }
 .box6{
-  background-color: #9EB3EB;
+  background-color: #1db2a3;
   width: 90%;
   height: 220px;
 }
@@ -146,9 +146,9 @@ a {
  /* border:2px dashed #F7EEEE;*/
   border-radius:5px;
   padding: 5px;
-  font-size: 17px;
+  font-size: 20px;
   text-align: left;
-  line-height: 20px;
+  line-height: 30px;
   color: white;
 }
 

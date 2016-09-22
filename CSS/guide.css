@@ -204,7 +204,7 @@
     .introMessage img {
         width: 90%;
         height: auto;
-        /*border: solid 3px #1db2a3;*/
+        border: solid 3px #1db2a3;
         text-align: center;
         margin: 0 auto;
         margin: 5px;
