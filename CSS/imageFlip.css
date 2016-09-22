@@ -18,24 +18,7 @@ a {
 .introMessageText_Img {
     background-color: white;
 }
-.allChecked {
-    text-align: center;
-    width: 100%; 
-    margin-bottom: 10px;
-    padding: 5px 0px 5px 0px;
-    border-bottom: solid 1px white;
-    display: none;
-    background-color: pink;
-    box-shadow: 4 0px 2px -2px gray;
-}
 
-.allChecked a {
-  color: white;
-}
-.allChecked p {
-  font-size: 24px;
-  color: white;
-}
 
 .slide {
   width: 100%;
