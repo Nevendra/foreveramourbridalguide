@@ -124,7 +124,7 @@ a {
 
 .box5{
   background-color: #1db2a3;
-  height: 270px;
+  height: 300px;
 }
 .box6{
   background-color: #1db2a3;
@@ -146,7 +146,7 @@ a {
  /* border:2px dashed #F7EEEE;*/
   border-radius:5px;
   padding: 5px;
-  font-size: 20px;
+  font-size: 17px;
   text-align: left;
   line-height: 30px;
   font-weight: bold;
@@ -233,7 +233,7 @@ a {
 }
 .flip p {
   padding: 5px;
-  font-size: 20px;
+  font-size: 17px;
   text-align: left;
   line-height: 30px;
   font-weight: bold;
