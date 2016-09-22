@@ -148,9 +148,10 @@ a {
   padding: 3px;
   font-size: 18px;
   text-align: left;
-  line-height: 25px;
+  line-height: 23px;
   font-weight: bold;
   color: white;
+  margin-bottom: 15px;
 }
 
 /*.shadow5 p {
@@ -235,9 +236,10 @@ a {
   padding: 5px;
   font-size: 18px;
   text-align: left;
-  line-height: 30px;
+  line-height: 23px;
   font-weight: bold;
   color: white;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 400px) {
