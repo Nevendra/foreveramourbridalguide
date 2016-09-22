@@ -12,7 +12,7 @@
         margin:0;
         padding:0;
         height:100%;
-        background-color: #E8E8E8;
+        background-color: #F2FFFF;
     }
 
     h1{
@@ -112,7 +112,7 @@
         /*margin-bottom: 20px;*/
         box-shadow: 10px 10px 5px #888888;
         padding-bottom: 5px;
-        background-color: lightpink;
+        background-color: #A1D4CD;
         z-index: 99;
     }
 
@@ -125,7 +125,7 @@
         color: white;
         margin-bottom: 20px;
         box-shadow: 0 2px 2px 2px gray;
-        background-color: #1db2a3;
+        background-color: #A1D4CD;
         text-align: center;
     }
     .mainTitle p {
@@ -197,7 +197,7 @@
         text-align: center;
         font-size: 30px;
         font-weight: bold;
-        color: white;
+        color: #1db2a3;
         margin: 5px;
     }
 
@@ -225,7 +225,7 @@
         text-align: center;
         /*color: #1db2a3;*/
         font-weight: bold;
-        color: white;
+        color: #1db2a3;
     }
     .introLeftImg {
         float: left;
@@ -244,7 +244,7 @@
         border-top: 1px solid white;
         border-bottom: 1px solid white;
         color: white;
-        background-color: lightpink;
+        background-color: #A1D4CD;
         margin: 10px 0px;
         box-shadow: 0 5px 2px -2px gray;
         padding: 5px;
@@ -252,6 +252,25 @@
     .yesMessage p {
         font-size: 20px;
     }
+
+.allChecked {
+text-align: center;
+width: 100%; 
+margin-bottom: 10px;
+padding: 5px 0px 5px 0px;
+border-bottom: solid 1px white;
+display: none;
+background-color: #F99E76;
+box-shadow: 4 0px 2px -2px gray;
+}
+
+.allChecked a {
+  color: white;
+}
+.allChecked p {
+  font-size: 24px;
+  color: white;
+}
     .transitionAnimation {
       position: fixed;
       width: 100%;

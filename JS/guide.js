@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 /////////// guide step ///////////
 	function guideStep() {
-		var stepCounter = 0;
+		var stepCounter = 2;
 		var steps = $(".contentContainer .guideSteps")
 		var currentStep = steps.eq(stepCounter);
 		var currentInput = currentStep.find('input[type="checkbox"]')
