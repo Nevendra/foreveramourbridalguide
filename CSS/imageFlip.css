@@ -111,7 +111,7 @@ a {
 
 .box{
   width:60%;
-  height:150px;
+  height:200px;
   background-color:white; 
   float: right;
   border-radius:5px;
@@ -124,12 +124,12 @@ a {
 
 .box5{
   background-color: #1db2a3;
-  height: 190px;
+  height: 270px;
 }
 .box6{
   background-color: #1db2a3;
   width: 90%;
-  height: 220px;
+  height: 400px;
 }
 
 .shadow5,.shadow6 {
@@ -153,13 +153,13 @@ a {
   color: white;
 }
 
-.shadow5 p {
+/*.shadow5 p {
   height:150px;
 }
 
 .shadow6 p {
-  height: 200px;
-}
+  height: 250px;
+}*/
 
 .guideThreeCheckOne p {
   font-size: 15px;
@@ -194,7 +194,7 @@ a {
 .flip {
   -webkit-perspective: 800;
    width: 70%;
-   height: 240px;
+   height: 420px;
     position: relative;
     float: right;
 }
