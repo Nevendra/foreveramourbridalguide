@@ -124,7 +124,7 @@ a {
 
 .box5{
   /*background-color: #1db2a3;*/
-  background-color: #ff7f50;
+  background-color: #1db2a3;
   height: 300px;
 }
 .box6{
@@ -153,8 +153,8 @@ a {
   line-height: 23px;
   color: white;
   margin-bottom: 15px;
-  font-family: 'Julius Sans One', sans-serif;
-  font-weight: bold;
+  /*font-family: 'Julius Sans One', sans-serif;*/
+  /*font-weight: bold;*/
 }
 
 /*.shadow5 p {
@@ -164,6 +164,7 @@ a {
 .shadow6 p {
   height: 250px;
 }*/
+
 
 .guideThreeCheckOne p {
   font-size: 15px;
@@ -240,11 +241,14 @@ a {
   font-size: 19px;
   text-align: left;
   line-height: 23px;
-  font-weight: bold;
   color: white;
   margin-bottom: 15px;
+  /*font-family: 'Julius Sans One', sans-serif;*/
+  /*font-weight: bold;*/
+}
+
+.ducks p {
   font-family: 'Julius Sans One', sans-serif;
-  font-weight: bold;
 }
 
 @media screen and (min-width: 400px) {
