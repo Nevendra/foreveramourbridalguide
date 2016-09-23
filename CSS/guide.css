@@ -517,6 +517,17 @@
         margin-bottom: 15px;
         padding: 5px;
     }
+    .mainTitle p {
+        font-weight: bold;
+        margin: 3px 130px;
+        font-size: 40px;
+    }
+    .mainTitleBottom p {
+        font-size: 35px;
+    }
+    .mobileLogo {
+        font-size: 35px;
+    }
 }  
 
 @media screen and (min-width: 750px) {
