@@ -129,7 +129,7 @@ a {
 }
 .box6{
   /*background-color: #1db2a3;*/
-  background-color: #D54C4A;
+  background-color: #1db2a3;
   width: 90%;
   height: 400px;
 }
@@ -245,10 +245,6 @@ a {
   margin-bottom: 15px;
   /*font-family: 'Julius Sans One', sans-serif;*/
   /*font-weight: bold;*/
-}
-
-.ducks p {
-  font-family: 'Julius Sans One', sans-serif;
 }
 
 @media screen and (min-width: 400px) {
