@@ -484,7 +484,12 @@
         margin: 3px 50px;
     }
 } 
-
+@media screen and (min-width: 450px) {
+    .mainTitle p {
+        font-weight: bold;
+        margin: 3px 20px;
+    }
+} 
 @media screen and (min-width: 500px) {
     .mainBodyImage {
         height: 300px;
