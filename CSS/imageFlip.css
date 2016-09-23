@@ -123,11 +123,13 @@ a {
 
 
 .box5{
-  background-color: #1db2a3;
+  /*background-color: #1db2a3;*/
+  background-color: #A1D4CD;
   height: 300px;
 }
 .box6{
-  background-color: #1db2a3;
+  /*background-color: #1db2a3;*/
+  background-color: #A1D4CD;
   width: 90%;
   height: 400px;
 }
@@ -149,10 +151,10 @@ a {
   font-size: 19px;
   text-align: left;
   line-height: 23px;
-  font-weight: bold;
   color: white;
   margin-bottom: 15px;
   font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
 }
 
 /*.shadow5 p {
@@ -242,6 +244,7 @@ a {
   color: white;
   margin-bottom: 15px;
   font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 400px) {
