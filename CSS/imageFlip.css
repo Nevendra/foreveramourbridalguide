@@ -123,11 +123,13 @@ a {
 
 
 .box5{
-  background-color: #1db2a3;
+  /*background-color: #1db2a3;*/
+  background-color: #A1D4CD;
   height: 300px;
 }
 .box6{
-  background-color: #1db2a3;
+  /*background-color: #1db2a3;*/
+  background-color: #A1D4CD;
   width: 90%;
   height: 400px;
 }
