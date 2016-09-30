@@ -490,7 +490,20 @@
         font-size: 20px;
     }
 
+
 } 
+
+@media screen and (min-width: 450px) {
+    .knotLeft {
+        top: 200px;
+       
+    }
+
+    .knotRight {
+        top: 200px;
+    
+    }
+}
 
 @media screen and (min-width: 500px) {
     .mainBodyImage {
@@ -507,6 +520,20 @@
     }
     nav {
         width: 80%;
+    }
+
+    .knotLeft {
+        top: 300px;
+        height: 100px;
+        width: 100px;
+       
+    }
+
+    .knotRight {
+        top: 300px;
+        height: 100px;
+        width: 100px;
+    
     }
 }  
 
@@ -557,6 +584,19 @@
     }
     .mainTitleBottom p {
         font-size: 45px;
+    }
+    .knotLeft {
+        top: 350px;
+        height: 150px;
+        width: 150px;
+       
+    }
+
+    .knotRight {
+        top: 350px;
+        height: 150px;
+        width: 150px;
+    
     }
 
 }  
