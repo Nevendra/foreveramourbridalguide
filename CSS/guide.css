@@ -114,7 +114,7 @@
         box-shadow: 10px 10px 5px #888888;
         padding-bottom: 5px;
         background-color: #A1D4CD;
-        z-index: 99;
+        z-index: 10;
     }
 
     .mainTitleBottom {
@@ -164,6 +164,12 @@
       font-size: 24px;
       color: white;
       margin: 5px 0px;
+    }
+    .leftIntro {
+
+    }
+    .rightIntro {
+
     }
     .guideIntro, .guideEnd {
         width: 100%; 
@@ -282,10 +288,17 @@
       height: 100%;
     }
 
+    #mobileNav {
+    }
+
+    #desktopNav {
+        display: none;
+    }
+
     /*******************************
     START NAV
     ********************************/
-
+    
     nav{
         margin-top: 10px;
         display: none;
@@ -295,7 +308,6 @@
     }
 
     nav ul{
-        //border: solid blue 1px;
         padding: 0px;
         margin: 0px;
         width: 100%;
@@ -310,15 +322,7 @@
         font-size: 20px;
     }
 
-    nav ul #empty{
-        //border: solid 1px violet;
-        width: 0;
-        padding: 0;
-        display: none;
-    }
-
     nav ul li a{
-        //border: solid 1px;
         color: black;
         text-decoration: none;
         padding-left: 10px;
@@ -335,20 +339,20 @@
         font-size: 17px;
     }
 
+
     .downArrow {
         margin: 0px;
         padding: 0px;
         line-height: 0px;
         float: right;
         padding-right: 10px;
+        text-align: right;
 
     }
 
     #navlogo{
         font-family: "Great Vibes", sans-serif;
         font-size: 25px;
-        //width: 26%;
-        //line-height: 32px;
         padding: 6px 0px 0px 5px;
         display: none;
     }
@@ -366,12 +370,10 @@
 
     #apptArrow{
         font-size: 20px;
-        //margin-left: 3px;
         transition: transform 0.5s;
     }
     
     #contactDropdown .socialLink{
-    //border: solid 1px;
     border-radius: 50%;
     display: inline-block;
     width: 30px;
@@ -381,7 +383,6 @@
     }
 
     #contactDropdown img{
-        //border: solid orange 1px;
         border-radius: 50%;
         width: 100%;
         background-color: rgb(150, 150, 150);
@@ -549,12 +550,319 @@
         margin: 0 auto;
     }*/
     .guideContainer {
-        background-color: lightgrey;
         width: 80%;
         margin: 0 auto;
     }
     nav {
         width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .Wrapper {
+        margin-top: 31px;
+    }
+    .leftIntro {
+        width: 50%;
+        float: left;
+        padding: 10px;
+
+    }
+    .rightIntro {
+        width: 50%;
+        float: left;
+        padding: 10px;
+    }
+
+    .guideIntro, .guideEnd {
+        width: 80%; 
+        margin: 0 auto;
+    }
+    .hamburgerMenu {
+        display: none;
+    }
+
+   .index-nav{
+        //border: solid green 1px;
+        /*position: relative;*/
+        display: table;
+        //top: auto;
+    }
+
+    #mobileNav {
+        display: none;
+    }
+
+    #desktopNav {
+        display: block;
+    }
+
+    nav{
+        //border: solid blue 1px;
+        font-size: 16px;
+        background-color: white;
+        box-shadow: 0 4px 3px -3px gray;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        z-index: 3;
+        /*make sure the z-index for nav is higher than it is for google translate dropdown (but google translate z-index can't be lower than 2 because it messes things up)*/
+    }
+
+    nav ul{
+        //border: solid blue 1px;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        width: 80%;
+        position: relative;
+        float: left;
+        justify-content: space-between;
+    }
+
+    nav ul li{
+        //border: solid red 1px;
+        display: inline-block;
+        //width: 13.5%;
+        float: left;
+        line-height: 25px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        position: relative;
+    }
+
+    nav ul #empty{
+        //border: solid 1px violet;
+        width: 0;
+        padding: 0;
+    }
+
+    nav ul li a{
+        //border: solid 1px;
+        color: black;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover{
+        color: #1db2a3;
+    }
+
+    #navlogo{
+        font-family: "Great Vibes", sans-serif;
+        font-size: 25px;
+        //width: 26%;
+        //line-height: 32px;
+        padding: 6px 0px 0px 5px;
+    }
+
+    #navApptlink{
+        color: #e06161;
+        font-weight: bold;
+    }
+
+    #navApptlink div{
+        border-left: solid 1px #e06161;
+        background-color: rgba(224, 97, 97, 0.2);    
+        display: inline-block;
+        float: left;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 20%;
+        line-height: 25px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    #apptArrow{
+        font-size: 20px;
+        //margin-left: 3px;
+        transition: transform 0.5s;
+    }
+
+    #navApptlink div:hover #apptArrow{
+        border-left: solid 1px #e06161;
+        transform: translateX(60%);
+        transition: transform 0.5s;
+    }
+
+
+    #navApptlink div:hover{
+        //background-color: #1ec5b9;
+        background-color: #e06161;
+        color: white;
+        transition: all 0.3s;
+    }
+
+    /*******************************
+    - regular transition dropdowns start -
+    If you use this, comment out the slow transitions below this.
+    ********************************
+    .dropdown{
+        //border: solid brown 1px;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0 4px 3px -3px gray;
+        margin-top: -5px;
+        padding-top: 10px;
+        left: -1%;
+        display: none;
+    }
+
+    nav ul li a:hover + .dropdown{
+    /*use the ~ to change CSS of one element when another is hovered. Use + instead of ~ when there's nothing between those elements in the html. For some reason I can't get it to work if I use the clas or id of "a." I have to use "a" or "li" as the selector
+    stackoverflow.com/questions/6910049/on-a-css-hover-event-can-i-change-another-divs-styling***************(/)
+        display: block;
+    }
+
+    .dropdown:hover{
+        display: block;
+    }
+
+    ********************************
+    regular transition dropdowns end
+    ********************************/
+
+    #aboutDropdown{
+        width: 200%;
+    }
+
+    #contactDropdown{
+        //border: solid pink 1px;
+        width: 600%;
+    }
+
+    #contactDropdown li{
+        //border: solid black 1px;
+        width: 100%;
+    }
+
+    #contactDropdown div{
+        //border: solid gold 1px;
+        margin-bottom: 10px;
+    }
+
+    #contactDropdown span{
+        display: none;
+    }
+
+    #mail-to{ /*email*/
+        color: #1db2a3;
+    }
+
+    #mail-to:hover{
+        border-bottom: solid 1px;
+    }
+
+    #contactDropdown div #googleMapLink{
+        //border: solid green 1px;
+        font-size: 13px;
+        color: #1db2a3;
+        //display: inline-block;
+    }
+
+    #contactDropdown div #googleMapLink:hover{
+        border-bottom: solid 1px;
+    }
+
+    #contactDropdown .socialLink{
+        //border: solid 1px;
+        border-radius: 50%;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+        margin-right: 7px;
+    }
+
+    #contactDropdown img{
+        //border: solid orange 1px;
+        border-radius: 50%;
+        width: 100%;
+        background-color: rgb(150, 150, 150);
+    }
+
+    .socialLink #knotIcon:hover{
+        background-color: #5eb7ec;
+    }
+
+    .socialLink #fbIcon:hover{
+        background-color: #3b5998;
+    }
+
+    .socialLink #twitterIcon:hover{
+        background-color: #55acee;
+    }
+
+    .socialLink #pinterestIcon:hover{
+        background-color: #bd081c;
+    }
+
+    .socialLink #instagramIcon:hover{
+        background-color: #A57C52;
+    }
+
+    /*******************************
+    - slow transition dropdowns start -
+    If you use this, comment out the regular transitions above this.
+
+    max-height: auto didn't work so I used a number (it still only increased to auto height instead of the number I used but the higher the number, the faster it transitioned)
+    ********************************/
+    .dropMenu{
+        padding-bottom: 2px;
+    }
+
+    .dropdown{
+        //border: solid brown 1px;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0 4px 3px -3px gray;
+        left: -1%;
+        max-height: 0px;
+        //height: auto;
+        overflow: hidden;
+        transition: max-height 0.6s;
+    }
+
+    nav ul li a:hover + #aboutDropdown{
+        padding-top: 3px;
+        max-height: 200px;
+        transition: max-height 0.8s;
+        display: block;
+    }
+
+    #aboutDropdown:hover{
+        padding-top: 3px;
+        max-height: 200px;
+        transition: max-height 0.8s;
+    }
+
+
+    nav ul li a:hover + #contactDropdown{
+        padding-top: 3px;
+        max-height: 1000px;
+        transition: max-height 1.4s;
+        display: block;
+    }
+
+    #contactDropdown:hover{
+        padding-top: 3px;
+        max-height: 1000px;
+        transition: max-height 1.4s;
+    }
+
+    /*******************************
+    slow transition dropdowns end
+    ********************************/
+
+    .currentPage{
+        //color: #898989;
+        color: #1db2a3;
     }
 
 }
