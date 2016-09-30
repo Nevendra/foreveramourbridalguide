@@ -517,16 +517,18 @@
 }  
 
 @media screen and (min-width: 900px) {
-    .slideContainer {
+/*    .slideContainer {
         width: 80%;
         margin: 0 auto;
     }
     .flipContainer {
         width: 80%;
         margin: 0 auto;
-    }
+    }*/
     .guideContainer {
         background-color: lightgrey;
+        width: 80%;
+        margin: 0 auto;
     }
 
 }
