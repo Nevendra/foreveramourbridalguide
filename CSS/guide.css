@@ -49,6 +49,9 @@
         padding: 0px;
         margin: 0px;
     }
+    #start {
+        margin-bottom: 10px;
+    }
     .break {
         margin-bottom: 10px;
     }
@@ -99,6 +102,24 @@
         background-repeat: no-repeat;
         box-shadow: inset 1px 4px 9px -6px;
 
+    }
+
+    .knotLeft {
+        top: 249px;
+        left: 0px;
+        position: absolute;
+        height: 75px;
+        width: 75px;
+        float: left;
+    }
+
+    .knotRight {
+        top: 249px;
+        right: 0px;
+        position: absolute;
+        height: 75px;
+        width: 75px;
+        float: right;
     }
     
     .mainTitle {
@@ -541,17 +562,17 @@
 }  
 
 @media screen and (min-width: 900px) {
- /*   .slideContainer {
+    .slideContainer {
         width: 80%;
         margin: 0 auto;
     }
     .flipContainer {
         width: 80%;
         margin: 0 auto;
-    }*/
+    }
     .guideContainer {
-        width: 80%;
         margin: 0 auto;
+        background-color: lightblue;
     }
     nav {
         width: 50%;
