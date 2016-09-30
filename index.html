@@ -66,14 +66,10 @@
 					<i class="fa fa-bars fa-2x hamburgerMenuIcon" aria-hidden="true"></i>
 				</div>
 
-				<nav>
-
+				<nav class="index-nav">
+					
+					<div id="mobileNav">
 					<ul>
-						<li id="navlogo">
-							<a href="index.html" class="currentPage" title="Home">
-								Forever Amour Bridal
-							</a>
-						</li>
 						<li>
 							<a class="dropMenu" href="about.html">
 								About
@@ -144,8 +140,86 @@
 									</a>
 								</li>
 							</ul>
+					</ul>
+					</div>
+			<!-- mobile nav ends here -->
+					<div id="desktopNav">
+					<ul>
+						<li id="navlogo">
+							<a href="index.html" class="currentPage" title="Home">
+								Forever Amour Bridal
+							</a>
+						</li>
+						<li>
+							<a class="dropMenu" href="about.html">
+								About <i class="fa fa-angle-down" aria-hidden="true"></i>
+							</a>
+							<ul class="dropdown" id="aboutDropdown">
+								<a href="about.html#reviewSection">
+									<li>Reviews</li>
+								</a>
+							</ul>
+						</li>
+						<li>
+							<a href="collection.html">
+								Collection
+							</a>
+						</li>
+						<li>
+							<a href="custom.html">
+								Custom <span>Made</span>
+							</a>
+						</li>
+						<li>
+							<a class="dropMenu" href="contact.html">
+								Contact <i class="fa fa-angle-down" aria-hidden="true"></i>
+							</a>
+							<ul class="dropdown" id="contactDropdown">
+								<li><div>
+										<strong>Phone:</strong>
+										212&nbsp;-&nbsp;486&nbsp;-&nbsp;2900
+									</div>
+									<div>
+										<strong>Email:</strong>
+				                        <span><br></span>
+										<a id="mail-to" href="mailto:stylist@foreveramoubridal.com?Subject=Interested%20in%20appointment" target="_top" title="email us">stylist@foreveramourbridal.com</a>
+									</div>
+									<div>
+										<strong>Location:</strong>
+										<br>
+										1089 Second Ave.<br>
+										Suite 2<br>
+										New York, NY 10022
+										<br>
+										<a id="googleMapLink" href="https://www.google.com/maps/place/Forever+Amour+Bridal/@40.7598392,-73.9725281,15z/data=!4m5!3m4!1s0x0:0x8089fa8893732f2f!8m2!3d40.7596767!4d-73.9652754" target="_blank">
+											Find us on Google Maps <i class="fa fa-angle-right" aria-hidden="true"></i>
+										</a>
+									</div>
+									<a class="socialLink" href="https://www.theknot.com/marketplace/forever-amour-bridal-boutique-new-york-ny-546587" target="_blank">
+										<img id="knotIcon" src="Images/SocialMediaIcons/Knot_SocialIcon_transparent.png" alt="The Knot Icon" title="The Knot Wedding Network">
+									</a>
+
+									<a class="socialLink" href="https://www.facebook.com/ForeverAmourBridalDresses/" target="_blank">
+										<img id="fbIcon" src="Images/SocialMediaIcons/FB_SocialIcon_transparent.png" alt="Facebook Icon" title="Facebook">
+									</a>
+
+									<a class="socialLink" href="https://twitter.com/foreveramournyc" target="_blank">
+										<img id="twitterIcon" src="Images/SocialMediaIcons/Twitter_SocialIcon_transparent.png" alt="Twitter Icon" title="Twitter">
+									</a>
+
+									<a class="socialLink" href="https://www.pinterest.com/foreveramour/" target="_blank">
+										<img id="pinterestIcon" src="Images/SocialMediaIcons/Pinterest_SocialIcon_transparent.png" alt="Pinterest Icon" title="Pinterest">
+									</a>
+
+									<a class="socialLink" href="https://www.instagram.com/foreveramourbridalboutique/" target="_blank">
+										<img id="instagramIcon" src="Images/SocialMediaIcons/Instagram_SocialIcon_transparent.png" alt="Instagram Icon" title="Instagram">
+									</a>
+								</li>
+							</ul>
 						</li><li id="empty"></li>
 					</ul>
+					</div>
+				<!-- desktop nav ends here -->
 				    <a id="navApptlink" href="appointment.html">
 				        <div>
 				            Make an Appointment&nbsp;<i id="apptArrow" class="fa fa-angle-right" aria-hidden="true"></i>
@@ -166,17 +240,22 @@
 					</div>
 					<div class="introMessage">
 
-						<p>
-							Do you know how to shop for a Wedding Dress
-						</p>
+						<div class="leftIntro">
+							<p>
+								Do you know how to shop for a Wedding Dress
+							</p>
 
-						<img src="Images/guideBrides/sadBride.jpg">
+							<img src="Images/guideBrides/sadBride.jpg">
+						</div>
 
-						<p>
-							Here's how to have a happy and care free experience
-						</p>
+						<div class="rightIntro">
+							<p>
+								Here's how to have a happy and care free experience
+							</p>
 
 						<img src="Images/guideBrides/happyBride.jpg">
+						</div>
+
 						<div class="clear"></div>
 					</div>
 
