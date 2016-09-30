@@ -289,16 +289,18 @@
     nav{
         margin-top: 10px;
         display: none;
+        width: 60%;
+        margin: 0 auto;
         
     }
 
     nav ul{
-        //border: solid blue 1px;
         padding: 0px;
         margin: 0px;
         width: 100%;
         text-align: justify;
         justify-content: space-between;
+        list-style-type: none;
     }
 
     nav ul li{
@@ -306,12 +308,6 @@
         margin: 0px;
     }
 
-    nav ul #empty{
-        //border: solid 1px violet;
-        width: 0;
-        padding: 0;
-        display: none;
-    }
 
     nav ul li a{
         //border: solid 1px;
