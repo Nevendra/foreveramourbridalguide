@@ -289,12 +289,13 @@
     nav{
         margin-top: 10px;
         display: none;
-        width: 60%;
+        /*width: 70%;*/
         margin: 0 auto;
         
     }
 
     nav ul{
+        //border: solid blue 1px;
         padding: 0px;
         margin: 0px;
         width: 100%;
@@ -306,8 +307,15 @@
     nav ul li{
         padding: 0px;
         margin: 0px;
+        font-size: 20px;
     }
 
+    nav ul #empty{
+        //border: solid 1px violet;
+        width: 0;
+        padding: 0;
+        display: none;
+    }
 
     nav ul li a{
         //border: solid 1px;
@@ -323,8 +331,8 @@
     }
 
     nav ul li ul li{
-        padding-left: 20%;
-        font-size: 15px;
+        padding-left: 15%;
+        font-size: 17px;
     }
 
     .downArrow {
@@ -451,6 +459,15 @@
         font-weight: bold;
         /*margin: 3px 10px;*/
     }
+    nav ul li{
+        font-size: 20px;
+    }
+
+    nav ul li ul li{
+        padding-left: 15%;
+        font-size: 20px;
+    }
+
 } 
 
 @media screen and (min-width: 500px) {
@@ -466,6 +483,9 @@
         font-weight: bold;
         /*margin: 3px 10px;*/
     }
+    nav {
+        width: 80%;
+    }
 }  
 
 @media screen and (min-width: 600px) {
@@ -473,6 +493,9 @@
         font-weight: bold;
        /* margin: 3px 0px;*/
         font-size: 30px;
+    }
+    nav {
+        width: 70%;
     }
 } 
 
@@ -517,16 +540,21 @@
 }  
 
 @media screen and (min-width: 900px) {
-    .slideContainer {
+ /*   .slideContainer {
         width: 80%;
         margin: 0 auto;
     }
     .flipContainer {
         width: 80%;
         margin: 0 auto;
-    }
+    }*/
     .guideContainer {
         background-color: lightgrey;
+        width: 80%;
+        margin: 0 auto;
+    }
+    nav {
+        width: 50%;
     }
 
 }
