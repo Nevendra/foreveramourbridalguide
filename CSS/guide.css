@@ -177,7 +177,7 @@
     }*/
 
     .stepTitle {
-      text-align: center;
+      text-align: left;
       width: 100%; 
       background-color: #A1D4CD;
       margin-bottom: 10px;
@@ -188,6 +188,7 @@
     }
     .stepTitle p {
       font-size: 24px;
+      font-weight: bold;
       color: white;
       margin: 5px 0px;
     }
@@ -210,6 +211,7 @@
         text-align: center;
         padding: 10px;
         font-size: 20px;
+        font-weight: bold;
         border: solid 3px white;
         background-color: #1db2a3;
         color: white;
@@ -254,7 +256,8 @@
         padding: 5px;
     }
     .yesMessage p {
-        font-size: 20px;
+        font-size: 17px;
+        font-weight: bold;
     }
 
     .slideContainer {
@@ -278,7 +281,6 @@
     margin-bottom: 10px;
     padding: 5px 0px 5px 0px;
     border-bottom: solid 1px white;
-    display: none;
     background-color: #F99E76;
     box-shadow: 4 0px 2px -2px gray;
     }

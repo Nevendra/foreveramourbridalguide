@@ -17,10 +17,10 @@ $(document).ready(function(){
 			var box = $(this).parent().parent().parent().parent();
 			if($(this).hasClass('slideBox')){
 				$(box.find('.slide')).slideToggle("slow", showImgGallery(box));
-				$(this).attr('disabled', true)
+				// $(this).attr('disabled', true)
 			} else if ($(this).hasClass('flipBox')){
-				box.find('.card').addClass('flipped');
-				$(this).attr('disabled', true);
+				box.find('.card').toggleClass('flipped');
+				// $(this).attr('disabled', true);
 			}
 	    });
 
@@ -84,14 +84,14 @@ $(document).ready(function(){
 
 		})
 
-		$('input').on('click', function(){
-				currentInput.change(function(){
-			    if(currentInput.length == currentInput.filter(":checked").length){
-			       var allchecked = currentStep.find('.allChecked');
-			   		allchecked.css("display", "block");
-			    }
-			});
-		});
+		// $('input').on('click', function(){
+		// 		currentInput.change(function(){
+		// 	    if(currentInput.length == currentInput.filter(":checked").length){
+		// 	       var allchecked = currentStep.find('.allChecked');
+		// 	   		allchecked.css("display", "block");
+		// 	    }
+		// 	});
+		// });
 
 	}
 	 guideStep();
