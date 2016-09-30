@@ -121,12 +121,13 @@
         width: 75px;
         float: right;
     }
-    
+    .divide {
+
+    }
     .mainTitle {
         padding: 0px;
         margin: 0px;
         font-family: "Great Vibes", sans-serif;
-        font-size: 25px;
         text-align: center;
         border-top: 1px white solid;
         border-bottom: 1px white solid;
@@ -136,6 +137,7 @@
         padding-bottom: 5px;
         background-color: #A1D4CD;
         z-index: 10;
+        /*padding: 0px 30px;*/
     }
 
     .mainTitleBottom {
@@ -154,6 +156,7 @@
         font-size: 25px;
         font-weight: bold;
         margin: 3px 0px;
+        padding: 5px;
     }
 
     .mainTitleBottom p {
@@ -511,6 +514,16 @@
 } 
 
 @media screen and (min-width: 450px) {
+    .divide {
+        display: none;
+    }
+
+    .mainTitle p {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 3px 0px;
+        padding: 5px;
+    }
     .knotLeft {
         top: 200px;
        
@@ -556,7 +569,7 @@
         width: 75%;
     }
     .mainTitle p {
-        font-size: 35px;
+        font-size: 30px;
         font-weight: bold;
         /*margin: 3px 10px;*/
     }
@@ -608,7 +621,7 @@
     .mainTitle p {
         font-weight: bold;
        /* margin: 3px 0px;*/
-        font-size: 30px;
+        font-size: 35px;
     }
     nav {
         width: 70%;
@@ -627,7 +640,7 @@
     .mainTitle p {
         font-weight: bold;
         /*margin: 3px 170px;*/
-        font-size: 30px;
+        font-size: 35px;
     }
     .mainTitleBottom p {
         font-size: 35px;
