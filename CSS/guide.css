@@ -61,6 +61,7 @@
         padding-right: 15px;
         padding-top: 5px;
         text-shadow: #e0e0e0 1px 1px 0;
+        display: none;
     }
     .mobileLogo {
         /*color: rgba(30, 196, 184, 0.6);*/
@@ -209,36 +210,7 @@
         margin: 0 auto;
         margin: 5px;
     }
-    .introMessageText_Img {
-        background-color: white;
-    }
-    .introMessageText_Img img{
-        width: 50%;
-        height: 150px;
-        border: solid 1px white;
-        box-shadow: 0 5px 2px -2px gray;
-    }
-    .introMessageText_Img p {
-        width: 45%;
-        padding: 5px;
-        font-size: 20px;
-        text-align: center;
-        /*color: #1db2a3;*/
-        font-weight: bold;
-        color: #1db2a3;
-    }
-    .introLeftImg {
-        float: left;
-    }
-    .introRightImg {
-        float: right;
-    }
-    .introLeftText {
-        float: right;
-    }
-    .introRightText {
-        float: left;
-    }
+    
     .yesMessage {
         text-align: center;
         border-top: 1px solid white;
@@ -481,7 +453,7 @@
 @media screen and (min-width: 400px) {
     .mainTitle p {
         font-weight: bold;
-        margin: 3px 10px;
+        /*margin: 3px 10px;*/
     }
 } 
 
@@ -496,14 +468,14 @@
     .mainTitle p {
         font-size: 35px;
         font-weight: bold;
-        margin: 3px 10px;
+        /*margin: 3px 10px;*/
     }
 }  
 
 @media screen and (min-width: 600px) {
     .mainTitle p {
         font-weight: bold;
-        margin: 3px 0px;
+       /* margin: 3px 0px;*/
         font-size: 30px;
     }
 } 
@@ -519,7 +491,7 @@
     }
     .mainTitle p {
         font-weight: bold;
-        margin: 3px 170px;
+        /*margin: 3px 170px;*/
         font-size: 30px;
     }
     .mainTitleBottom p {
@@ -534,7 +506,7 @@
     .mainTitle p {
         font-size: 45px;
         font-weight: bold;
-        margin: 3px 100px;
+        /*margin: 3px 100px;*/
     }
     .mainBodyImage {
         height: 400px;
