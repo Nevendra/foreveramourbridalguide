@@ -360,6 +360,10 @@ a {
     height: 80%;
     margin: 0 auto;
   }
+  .shadow5 ul li , .shadow6 ul li {
+    margin-bottom: 20px;
+
+  }
 }  
 
 @media screen and (min-width: 600px) {
