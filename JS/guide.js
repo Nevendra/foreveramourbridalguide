@@ -84,14 +84,23 @@ $(document).ready(function(){
 
 		})
 
-		// $('input').on('click', function(){
-		// 		currentInput.change(function(){
-		// 	    if(currentInput.length == currentInput.filter(":checked").length){
-		// 	       var allchecked = currentStep.find('.allChecked');
-		// 	   		allchecked.css("display", "block");
-		// 	    }
-		// 	});
-		// });
+		$('input').on('click', function(){
+				currentInput.change(function(){
+			    if(currentInput.length == currentInput.filter(":checked").length){
+			       var allchecked = currentStep.find('.allChecked');
+			   		allchecked.css("display", "block");
+			    }
+			});
+		});
+
+		$(".backButton").click(function(){
+			steps.eq(stepCounter).hide();
+			stepCounter = stepCounter - 1;
+			steps.eq(stepCounter).show();
+			currentStep = steps.eq(stepCounter);
+			currentInput = currentStep.find('input[type="checkbox"]')
+
+		})
 
 	}
 	 guideStep();
