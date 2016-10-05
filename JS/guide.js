@@ -84,14 +84,14 @@ $(document).ready(function(){
 
 		})
 
-		$('input').on('click', function(){
-				currentInput.change(function(){
-			    if(currentInput.length == currentInput.filter(":checked").length){
-			       var allchecked = currentStep.find('.allChecked');
-			   		allchecked.css("display", "block");
-			    }
-			});
-		});
+		// $('input').on('click', function(){
+		// 		currentInput.change(function(){
+		// 	    if(currentInput.length == currentInput.filter(":checked").length){
+		// 	       var allchecked = currentStep.find('.allChecked');
+		// 	   		allchecked.css("display", "block");
+		// 	    }
+		// 	});
+		// });
 
 		$(".backButton").click(function(){
 			steps.eq(stepCounter).hide();
@@ -103,7 +103,7 @@ $(document).ready(function(){
 		})
 
 	}
-	 guideStep();
+	 // guideStep();
 
 
 });
