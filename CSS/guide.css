@@ -127,15 +127,16 @@
     .mainTitle {
         padding: 0px;
         margin: 0px;
-        font-family: "Great Vibes", sans-serif;
+        font-family: 'Dancing Script', cursive;
         text-align: center;
         border-top: 1px white solid;
         border-bottom: 1px white solid;
         color: white;
         /*margin-bottom: 20px;*/
-        box-shadow: 10px 10px 5px #888888;
+        /*box-shadow: 10px 10px 5px #888888;*/
         padding-bottom: 5px;
-        background-color: #A1D4CD;
+        /*background-color: #A1D4CD;*/
+        background-color: #d7d2cb;
         z-index: 10;
         /*padding: 0px 30px;*/
     }
@@ -143,7 +144,7 @@
     .mainTitleBottom {
         padding: 0px;
         margin: 0px;
-        font-family: "Great Vibes", sans-serif;
+        font-family: 'Dancing Script', cursive;
         border-top: 1px white solid;
         border-bottom: 1px white solid;
         color: white;
@@ -153,7 +154,14 @@
         text-align: center;
     }
     .mainTitle p {
-        font-size: 25px;
+        font-size: 35px;
+        font-weight: bold;
+        margin: 3px 0px;
+        padding: 5px;
+    }
+
+    .mainTitleSub p {
+        font-size: 30px;
         font-weight: bold;
         margin: 3px 0px;
         padding: 5px;
@@ -191,6 +199,7 @@
       font-weight: bold;
       color: white;
       margin: 5px 0px;
+      font-family: 'Courgette', cursive;
     }
     .leftIntro {
 
@@ -213,7 +222,7 @@
         font-size: 20px;
         font-weight: bold;
         border: solid 3px white;
-        background-color: #1db2a3;
+        background-color: #776e64;
         color: white;
         margin-bottom: 10px;
     }
@@ -232,8 +241,10 @@
         text-align: center;
         font-size: 30px;
         font-weight: bold;
-        color: #1db2a3;
+        /*color: #1db2a3;*/
+        color: #776e64;
         margin: 5px;
+        font-family: 'Dancing Script', cursive;
     }
 
     .introMessage img {
@@ -331,7 +342,7 @@
     .animationLeft {
       width: 50%;
       height: 100vh;
-      background-color: black;
+      background-color: #c4bfb6;
       position: absolute;
       left: -50%;
     }
@@ -339,7 +350,7 @@
     .animationRight {
       width: 50%;
       height: 100vh;
-      background-color: black;
+      background-color: #c4bfb6;
       position: absolute;
       right: -50%;
     }
@@ -347,15 +358,17 @@
       position: absolute;
       z-index: 23;
       display: none;
-      width: 300px;
-      height: 200px;
+      width: 70%;
+      height: 70%;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+      border-radius: 25%;
     }
     .animationImage img {
       width: 100%;
       height: 100%;
+      border-radius: 25%;
     }
 
     #mobileNav {
@@ -496,10 +509,15 @@
     }*/
     
     footer{
-        background-color: lightgrey;
+        background-color: #d7d2cb;;
         height: 70px;
         width:100%;
         height:100px;
+        color: #776e64;
+    }
+
+    footer a {
+        color: #776e64;
     }
    
 
@@ -707,6 +725,9 @@
         width: 150px;
     
     }
+    footer {
+        margin-top: 100px;
+    }
 
 }  
 
@@ -755,10 +776,16 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .mainTitleSub p {
+        font-size: 35px;
+        font-weight: bold;
+        margin: 3px 0px;
+        padding: 5px;
+    }
     .Wrapper {
         margin-top: 31px;
     }
-    .leftIntro {
+/*    .leftIntro {
         width: 50%;
         float: left;
         padding: 10px;
@@ -768,7 +795,7 @@
         width: 50%;
         float: left;
         padding: 10px;
-    }
+    }*/
 
     .guideIntro, .guideEnd {
         width: 80%; 
@@ -947,7 +974,8 @@
     }
 
     #mail-to{ /*email*/
-        color: #1db2a3;
+        /*color: #1db2a3;*/
+        color: #776e64;
     }
 
     #mail-to:hover{
