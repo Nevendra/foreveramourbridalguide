@@ -87,12 +87,7 @@
         clear: both;
     }
 
-/*    .mainTitleDropShadowTop {
-        box-shadow:inset 0 15px 7px -10px #111;
-        width: 100%;
-        height: 2px;
-        opacity: 0.3;
-    }*/
+
     .mainBodyImage {
         width: 100%;
         height: 200px;
@@ -104,26 +99,6 @@
 
     }
 
-    .knotLeft {
-        top: 249px;
-        left: 0px;
-        position: absolute;
-        height: 75px;
-        width: 75px;
-        float: left;
-    }
-
-    .knotRight {
-        top: 249px;
-        right: 0px;
-        position: absolute;
-        height: 75px;
-        width: 75px;
-        float: right;
-    }
-    .divide {
-
-    }
     .mainTitle {
         padding: 0px;
         margin: 0px;
@@ -132,13 +107,9 @@
         border-top: 1px white solid;
         border-bottom: 1px white solid;
         color: white;
-        /*margin-bottom: 20px;*/
-        /*box-shadow: 10px 10px 5px #888888;*/
         padding-bottom: 5px;
-        /*background-color: #A1D4CD;*/
         background-color: #d7d2cb;
         z-index: 10;
-        /*padding: 0px 30px;*/
     }
 
     .mainTitleBottom {
@@ -180,9 +151,6 @@
         box-shadow:inset 0 15px 7px -16px #111;
     }
 
-   /* .intro {
-        background-color: #E8E8E8;
-    }*/
 
     .stepTitle {
       text-align: center;
@@ -274,26 +242,16 @@
     }
 
     .slideContainer {
-    /*    background-image: url(../Images/61696-OANQZZ-439.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;*/
         background-color: #b1e4e3;
         border-bottom: solid 1px black;
         margin-bottom: 15px;
         position: relative;
     }
     .flipContainer {
- /*       background-image: url(../Images/61696-OANQZZ-439.jpg);
-         background-size: cover;
-        background-repeat: no-repeat;*/
         background-color: #b1e4e3;
         border-bottom: solid 1px black;
         margin-bottom: 15px;
         position: relative;
-    }
-
-    .boxStripe {
-
     }
 
     .allChecked {
@@ -476,7 +434,6 @@
         width: 50%;
         margin: 0 auto;
         height: 30px;
-       /* background-color: red;*/
         text-align: center;
         float: left;
         padding-left: 5px;
@@ -504,11 +461,6 @@
         float: left;
         text-align: right;
     }
-
-/*    .Wrapper{
-        height:100%;
-        position:relative;
-    }*/
     
     footer{
         background-color: #d7d2cb;;
@@ -787,17 +739,7 @@
     .Wrapper {
         margin-top: 31px;
     }
-/*    .leftIntro {
-        width: 50%;
-        float: left;
-        padding: 10px;
 
-    }
-    .rightIntro {
-        width: 50%;
-        float: left;
-        padding: 10px;
-    }*/
 
     .guideIntro, .guideEnd {
         width: 50%; 

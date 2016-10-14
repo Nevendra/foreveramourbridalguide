@@ -85,8 +85,6 @@ a {
   left: 7px;
   top: 7px;
   background: #d7d2cb;
-/*  background: -webkit-linear-gradient(top, #222222 0%, #45484d 100%);
-  background: linear-gradient(to bottom, #222222 0%, #45484d 100%);*/
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white;
 }
 .checkBoxes label:after {
@@ -141,16 +139,9 @@ a {
 
 
 .box5{
-  /*background-color: #1db2a3;*/
- /* background-color: #1db2a3;*/
-  /*background-image: url(../Images/Preview.jpg);*/
-/*  background-size: 100% 100%;
-  background-repeat: no-repeat;*/
   height: 300px;
 }
 .box6{
-  /*background-color: #1db2a3;*/
-  /*background-color: #1db2a3;*/
   width: 90%;
   height: 400px;
 }
@@ -280,7 +271,7 @@ a {
     cursor: pointer;
 }
 .card img {
-  width: 80%;
+  width: 100%;
   height: 300px;
 }
 .flip p {
@@ -290,8 +281,6 @@ a {
   line-height: 23px;
   color: white;
   margin-bottom: 15px;
-  /*font-family: 'Julius Sans One', sans-serif;*/
-  /*font-weight: bold;*/
 }
 
 .largerTextP p {
@@ -342,16 +331,6 @@ a {
     font-size: 30px;
     line-height: 30px;
   }
-
- /* .imgDiv {
-    text-align: center;
-    width: 100%;
-  }
-  .imgDiv img {
-    width: 60%;
-    padding: 0px;
-    margin: 0px;
-  }*/
 
 }
 
@@ -446,6 +425,10 @@ a {
   }
 } 
 @media screen and (min-width: 1200px) {
+  .card img {
+  width: 80%;
+  height: 300px;
+}
   .checkBoxes {
     width: 120px;
     height: 120px;
