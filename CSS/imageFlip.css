@@ -34,6 +34,11 @@ a {
   display: inline-block;
 }
 
+.pdfSteps img {
+  height: 200px;
+  width: 200px;
+}
+
 .imgDisplay {
   height: 100%;
   width: 100%;
@@ -158,7 +163,19 @@ a {
     padding-top: 10px;
 }
 
-.shadow5 p, .shadow6 p {
+.pdfSteps {
+  text-align: center;
+}
+
+.pdfSteps ul {
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+  /*list-style-type: none; */ 
+  line-height: 40px;
+}
+
+.shadow5 p, .shadow6 p, .pdfSteps p {
   padding: 3px;
   font-size: 19px;
   text-align: center;
@@ -263,7 +280,7 @@ a {
     cursor: pointer;
 }
 .card img {
-  width: 100%;
+  width: 80%;
   height: 300px;
 }
 .flip p {
@@ -299,7 +316,7 @@ a {
       left: 15px;
     }
 
-  .shadow5 p, .shadow6 p {
+  .shadow5 p, .shadow6 p, .pdfSteps p {
     font-size: 22px;
   }
 
@@ -374,7 +391,7 @@ a {
 }  
 
 @media screen and (min-width: 600px) {
-  .shadow5 p, .shadow6 p {
+  .shadow5 p, .shadow6 p, .pdfSteps p {
     font-size: 25px;
   }
   .flip p {
@@ -420,7 +437,7 @@ a {
     margin: 0 auto;
   }
 
-   .shadow5 p, .shadow6 p {
+   .shadow5 p, .shadow6 p, .pdfSteps p {
     font-size: 30px;
   }
   .flip p {
@@ -443,5 +460,19 @@ a {
     height: 35px;
     top: 30px;
     left: 10px;
+  }
+  .pdfDiv ul {
+    font-size: 25px;
+    line-height: 50px;
+  }
+  .imgDisplay img {
+    width: 15%;
+    height: 150px;
+    display: inline-block;
+  }
+   .bigImg img {
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
   }
  } 
