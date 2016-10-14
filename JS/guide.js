@@ -103,7 +103,22 @@ $(document).ready(function(){
 		})
 
 	}
-	 guideStep();
+	 // guideStep();
+
+	var doc = new jsPDF();
+	var specialElementHandlers = {
+	    '#editor': function (element, renderer) {
+	        return true;
+	    }
+	};
+
+	$('.pdf').click(function () {
+	    doc.fromHTML($('.pdfDiv').html(), 15, 15, {
+	        'width': 170,
+	            'elementHandlers': specialElementHandlers
+	    });
+	    doc.save('foreveramourguide.pdf');
+	});
 
 
 });
