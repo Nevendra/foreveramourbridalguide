@@ -69,6 +69,22 @@ a {
   margin: 0 auto;
   border-radius: none;
 }
+.backArrow {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translate(0px, -50%);
+  /*opacity: 0.5;*/
+  color: #d7d2cb;
+}
+.fowardArrow {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translate(0px, -50%);
+  /*opacity: 0.5;*/
+  color: #d7d2cb;
+}
 .checkBoxes {
   width: 70px;
   height: 70px;
@@ -127,6 +143,10 @@ a {
   position: relative;
   margin-bottom: 20px;
   margin-right: 10px;
+}
+
+.removeBackgroundImage {
+  display: none;
 }
 
 .imgDiv {
@@ -248,14 +268,15 @@ a {
 .flip .card.flipped {
   -webkit-transform: rotatey(-180deg);
   text-align: center;
+/*  background-image: none;*/
 
 }
-.flip .card.flipped p {
+.flip .card.flipped .hideThis{
   display: none;
 }
-.flip .card.flipped ul {
+/*.flip .card.flipped ul {
   display: none;
-}
+}*/
 .flip .card.flipped img {
   width: 100%;
   height: 50%;
@@ -302,6 +323,54 @@ a {
   font-size: 30px;
   line-height: 30px;
 }
+.months {
+  float: right;
+  margin-right: 10px;
+}
+.weddingMonth {
+  padding: 0px;
+  float: left;
+}
+.weddingMonth span {
+  text-align: right;
+  background-color: #ab989d;
+  color: white; 
+}
+.weddingMonth li {
+  background-color: #d7d2cb;
+  list-style-type: none;
+  text-align: left;
+  background-color: #ab989d;
+  color: white; 
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-bottom: 5px;
+}
+.shoppingMonth {
+  float: left;
+}
+.shoppingMonth span {
+  text-align: right;
+  background-color: #ab989d;
+  color: white; 
+}
+.shoppingMonth li {
+  background-color: #d7d2cb;
+  list-style-type: none;
+  text-align: left;
+  background-color: #d7d2cb;
+  color: #776e64; 
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 350px) {
+    .months {
+    float: right;
+    margin-right: 40px;
+  }
+}
 
 @media screen and (min-width: 400px) {
   
@@ -347,8 +416,19 @@ a {
     line-height: 30px;
   }
 
+  .months {
+    float: right;
+    margin-right: 60px;
+  }
+
 }
 
+@media screen and (min-width: 450px) {
+    .months {
+    float: right;
+    margin-right: 100px;
+  }
+}
 
 @media screen and (min-width: 500px) {
   .flip .card.flipped img {
@@ -386,6 +466,13 @@ a {
     margin-bottom: 20px;
 
   }
+  .months {
+    float: right;
+    margin-right: 80px;
+  }
+  .monthBreak {
+    display: none;
+  }
 }  
 
 @media screen and (min-width: 600px) {
@@ -406,6 +493,11 @@ a {
     display: inline-block;
     border-radius: 100px;
   }
+  .months {
+    float: right;
+    margin-right: 100px;
+    font-size: 18.5px;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -418,6 +510,11 @@ a {
     height: 40px;
     display: inline-block;
     border-radius: 100px;
+  }
+  .months {
+    float: right;
+    margin-right: 130px;
+    font-size: 18.5px;
   }
 }
 
@@ -457,12 +554,59 @@ a {
     font-size: 30px;
     line-height: 30px;
   }
+    .months {
+      float: right;
+      margin-right: 130px;
+      font-size: 18.5px;
+    }
 } 
+@media screen and (min-width: 800px) {
+    .months {
+      float: right;
+      margin-right: 150px;
+      font-size: 18.5px;
+    }
+}
+@media screen and (min-width: 900px) {
+    .months {
+      float: right;
+      margin-right: 170px;
+      font-size: 18.5px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .months {
+      float: right;
+      margin-right: 170px;
+      font-size: 18.5px;
+    }
+}
+@media screen and (min-width: 1050px) {
+    .months {
+      float: right;
+      margin-right: 190px;
+      font-size: 18.5px;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .months {
+      float: right;
+      margin-right: 210px;
+      font-size: 18.5px;
+    }
+}
+@media screen and (min-width: 1150px) {
+    .months {
+      float: right;
+      margin-right: 230px;
+      font-size: 18.5px;
+    }
+}
 @media screen and (min-width: 1200px) {
   .card img {
-  width: 80%;
-  height: 300px;
-}
+    width: 80%;
+    height: 300px;
+  }
   .checkBoxes {
     width: 120px;
     height: 120px;
@@ -478,18 +622,30 @@ a {
     top: 30px;
     left: 10px;
   }
-  .pdfDiv ul {
-    font-size: 25px;
-    line-height: 50px;
-  }
+
   .imgDisplay img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: inline-block;
   }
    .bigImg img {
-    width: 100%;
+    width: 90%;
     height: 80%;
     margin: 0 auto;
+  }
+    .months {
+      float: right;
+      margin-right: 250px;
+      font-size: 18.5px;
+    }
+  .flip .card.flipped img {
+    width: 70%;
+    height: 100%;
+  }
+  .backArrow {
+    color: white;
+  }
+  .fowardArrow {
+    color: white;
   }
  } 

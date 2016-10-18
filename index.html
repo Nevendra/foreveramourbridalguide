@@ -12,6 +12,7 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Courgette|Niconne" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" type="text/css" href="CSS/imageFlip.css">
 	<link rel="stylesheet" type="text/css" href="CSS/guide.css">
@@ -152,13 +153,13 @@
 						</li>
 						<li>
 							<a class="dropMenu" href="about.html">
-								About <i class="fa fa-angle-down" aria-hidden="true"></i>
+								About <!-- <i class="fa fa-angle-down" aria-hidden="true"> --></i>
 							</a>
-							<ul class="dropdown" id="aboutDropdown">
+							<!-- <ul class="dropdown" id="aboutDropdown">
 								<a href="about.html#reviewSection">
 									<li>Reviews</li>
 								</a>
-							</ul>
+							</ul> -->
 						</li>
 						<li>
 							<a href="collection.html">
@@ -172,9 +173,9 @@
 						</li>
 						<li>
 							<a class="dropMenu" href="contact.html">
-								Contact <i class="fa fa-angle-down" aria-hidden="true"></i>
+								Contact <!-- <i class="fa fa-angle-down" aria-hidden="true"> --></i>
 							</a>
-							<ul class="dropdown" id="contactDropdown">
+							<!-- <ul class="dropdown" id="contactDropdown">
 								<li><div>
 										<strong>Phone:</strong>
 										212&nbsp;-&nbsp;486&nbsp;-&nbsp;2900
@@ -215,7 +216,7 @@
 										<img id="instagramIcon" src="Images/SocialMediaIcons/Instagram_SocialIcon_transparent.png" alt="Instagram Icon" title="Instagram">
 									</a>
 								</li>
-							</ul>
+							</ul> -->
 						</li><li id="empty"></li>
 					</ul>
 					</div>
@@ -305,6 +306,12 @@
 						<div class="clear"></div>
 						<div class="slide"> 
 							<div class="imgDisplay">
+								<div class="backArrow imgArrows">
+									<i class="fa fa-chevron-left" aria-hidden="true"></i>
+								</div>
+								<div class="fowardArrow imgArrows">
+									<i class="fa fa-chevron-right" aria-hidden="true"></i>
+								</div>
 						        <ul class="imgList">
 					        		<li>
 					        			<img class="thumbnail" src="Images/guideBrides/beachBride.jpg">
@@ -479,8 +486,8 @@
 						        <div class="card"> 
 						            <div class="face front">
 						           		<div class="box box6 shadow6">
-						           			<p>Perfect timing</p>
-						           			<ul>
+						           			<p class="hideThis">Perfect timing</p>
+						           			<ul class="hideThis">
 						           				<li>
 						           					Allow 1 year to 8 months to shop
 						           				</li>
@@ -497,64 +504,62 @@
 										</div>
 						            </div> 
 						            <div class="face back"> 
-						                <img src="Images/guideBrides/calendar.jpg">
+							            <div class="months">
+							               <ul class="weddingMonth">
+							               		<li>
+							               			WEDDING
+							               			<br class="monthBreak">
+							               			MONTH
+							               		</li>
+							               		<li>January </li>
+							               		<li>February </li>
+							               		<li>March </li>
+							               		<li>April </li>
+							               		<li>May </li>
+							               		<li>June </li>
+							               		<li>July </li>
+							               		<li>August </li>
+							               		<li>September </li>
+							               		<li>October </li>
+							               		<li>November </li>
+							               		<li>December </li>
+							               </ul>
+							               <ul class="shoppingMonth">
+							               		<li>
+							               			START
+							               			<br class="monthBreak">
+							               			SHOPPING
+							               		</li>
+							               		<li>May </li>
+							               		<li>June </li>
+							               		<li>July </li>
+							               		<li>August </li>
+							               		<li>September </li>
+							               		<li>October </li>
+							               		<li>November </li>
+							               		<li>December </li>
+							               		<li>January </li>
+							               		<li>February </li>
+							               		<li>March </li>
+							               		<li>April </li>
+							               </ul>
+							              </div>
+							              <div class="clear"></div>
 						            </div> 
+						            <div class="clear"></div>
 						        </div> 
 							</div> 
 						</div>
 						<div class="clear"></div>
 					</div><!-- end of flip Container -->
 
-					<div class="flipContainer">
-						<div class="checkAndText">
-							<section title=".checkBoxes">
-								<!-- .checkBoxes -->
-									<div class="checkBoxes">
-										<input type="checkbox" value="None" id="guideTwoCheckTwo" name="check" class="flipBox"/>
-										<label for="guideTwoCheckTwo"></label>
-									</div>
-								<!-- end .checkBoxes -->
-							</section>
-
-							<div class="flip"> 
-						        <div class="card"> 
-						            <div class="face front">
-						           		<div class="box box6 shadow6">
-						           			<p>Perfect timing</p>
-						           			<ul>
-						           				<li>
-						           					Allow 1 year to 8 months to shop
-						           				</li>
-						           				<li>
-						           					Add 3 months for alterations
-						           				</li>
-						           				<li>
-													Have less time? Salons have dresses that you can buy off the rack
-							            		</li>
-							            		<li>
-							            			Check online for sample sale and trunk shows to get a discount
-							            		</li>
-						           			</ul>
-										</div>
-						            </div> 
-						            <div class="face back"> 
-						                <img src="Images/guideBrides/calendar.jpg">
-						            </div> 
-						        </div> 
-							</div> 
-						</div>
-						<div class="clear"></div>
-					</div><!-- end of flip Container -->
-
-					
-					
 					<div class="backButton">
 						<p>BACK</p>
 					</div>
 
 					<div class="clear"></div>
 
-					<div class="allChecked">
+					<div class="notChecked">
 						<a class="nextStep" href="#start">Click To Go To Next Step</a>
 					</div>
 					
@@ -609,7 +614,7 @@
 										</div>
 						            </div> 
 						            <div class="face back"> 
-						                <img src="Images/guideBrides/theKnot.gif">
+						                <img theKnotImg src="Images/guideBrides/theKnot.gif">
 						            </div> 
 						        </div> 
 							</div> 
@@ -722,6 +727,12 @@
 						<div class="slide"> 
 					        <div class="imgGallery">
 					        	<div class="imgDisplay">
+					        		<div class="backArrow imgArrows">
+										<i class="fa fa-chevron-left" aria-hidden="true"></i>
+									</div>
+									<div class="fowardArrow imgArrows">
+										<i class="fa fa-chevron-right" aria-hidden="true"></i>
+									</div>
 					        		<ul class="imgList">
 						        		<li>
 						        			<img class="thumbnail" src="Images/guideBrides/ourBotiqueOne.jpg">
@@ -984,6 +995,12 @@
 						<div class="slide"> 
 					        <div class="imgGallery">
 					        	<div class="imgDisplay">
+					        		<div class="backArrow imgArrows">
+										<i class="fa fa-chevron-left" aria-hidden="true"></i>
+									</div>
+									<div class="fowardArrow imgArrows">
+										<i class="fa fa-chevron-right" aria-hidden="true"></i>
+									</div>
 					        		<ul class="imgList">
 						        		<li>
 						        			<img class="thumbnail" src="Images/guideBrides/reviewsOne.jpg">
@@ -1092,6 +1109,12 @@
 						<div class="slide"> 
 					        <div class="imgGallery">
 					        	<div class="imgDisplay">
+					        		<div class="backArrow imgArrows">
+										<i class="fa fa-chevron-left" aria-hidden="true"></i>
+									</div>
+									<div class="fowardArrow imgArrows">
+										<i class="fa fa-chevron-right" aria-hidden="true"></i>
+									</div>
 					        		<ul class="imgList">
 						        		<li>
 						        			<img class="thumbnail" src="Images/guideBrides/JustinAlexander_2-brighter-smaller.jpg">
