@@ -28,29 +28,31 @@ a {
   display: none;
 }
 
-.imgDisplay img {
-  width: 20%;
-  height: 75px;
+.imgList img {
+  width: 20px;
+  height: 20px;
   display: inline-block;
-}
-
-.pdfSteps img {
-  height: 200px;
-  width: 200px;
+  border-radius: 100px;
 }
 
 .imgDisplay {
   height: 100%;
   width: 100%;
-  display: none;
+  /*display: none;*/
+  position: relative;
 }
 
-.imgDisplay ul{
+.imgDisplay ul.imgList{
   list-style-type: none; 
   padding: 0px;
   margin: 0px;
   padding-top: 10px;
   text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0px);
+
 }
 
 .imgDisplay ul li {
@@ -65,6 +67,7 @@ a {
   width: 100%;
   height: 80%;
   margin: 0 auto;
+  border-radius: none;
 }
 .checkBoxes {
   width: 70px;
@@ -370,8 +373,8 @@ a {
     left: 10px;
   }
   .imgDisplay img {
-    width: 20%;
-    height: 100px;
+    width: 30px;
+    height: 30px;
     display: inline-block;
   }
   .bigImg img {
@@ -397,12 +400,24 @@ a {
   .smallerText li {
     font-size: 20px;
   }
+  .imgList img {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 100px;
+  }
 }
 
 @media screen and (min-width: 700px) {
     .card img {
     width: 100%;
     height: 300px;
+  }
+  .imgList img {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 100px;
   }
 }
 
@@ -425,9 +440,9 @@ a {
     left: 15px;
   }
   .imgDisplay img {
-    width: 20%;
+/*    width: 20%;
     height: 100px;
-    display: inline-block;
+    display: inline-block;*/
   }
   .bigImg img {
     width: 100%;
@@ -468,8 +483,8 @@ a {
     line-height: 50px;
   }
   .imgDisplay img {
-    width: 15%;
-    height: 150px;
+    width: 50px;
+    height: 50px;
     display: inline-block;
   }
    .bigImg img {

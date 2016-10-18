@@ -103,6 +103,6 @@ $(document).ready(function(){
 		})
 
 	}
-	 guideStep();
+	 // guideStep();
 
 });
