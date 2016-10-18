@@ -358,8 +358,8 @@ a {
   background-color: #d7d2cb;
   list-style-type: none;
   text-align: left;
-  background-color: #ab989d;
-  color: white; 
+  background-color: #d7d2cb;
+  color: #776e64; 
   padding-left: 3px;
   padding-right: 3px;
   margin-bottom: 5px;
@@ -604,9 +604,9 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .card img {
-  width: 80%;
-  height: 300px;
-}
+    width: 80%;
+    height: 300px;
+  }
   .checkBoxes {
     width: 120px;
     height: 120px;
@@ -629,7 +629,7 @@ a {
     display: inline-block;
   }
    .bigImg img {
-    width: 100%;
+    width: 90%;
     height: 80%;
     margin: 0 auto;
   }
@@ -638,4 +638,14 @@ a {
       margin-right: 250px;
       font-size: 18.5px;
     }
+  .flip .card.flipped img {
+    width: 70%;
+    height: 100%;
+  }
+  .backArrow {
+    color: white;
+  }
+  .fowardArrow {
+    color: white;
+  }
  } 
