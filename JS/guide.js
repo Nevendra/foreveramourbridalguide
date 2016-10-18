@@ -20,6 +20,8 @@ $(document).ready(function(){
 				// $(this).attr('disabled', true)
 			} else if ($(this).hasClass('flipBox')){
 				box.find('.card').toggleClass('flipped');
+				box.find('.box').toggleClass('removeBackgroundImage');
+
 				// $(this).attr('disabled', true);
 			}
 	    });
@@ -34,6 +36,32 @@ $(document).ready(function(){
 		var thumb = $(this).parent().parent().parent()
 		$(thumb.find('.bigImg').children()).attr("src", $(this).attr("src"));
 	});
+
+//////// arrow ////// 
+var imgCounter = 0;
+
+$('.imgArrows').click(function(){
+	var arrowThumb = $(this).parent().parent().find('.imgList img');
+	var	arrowImg = $(this).parent().parent().find('.bigImg').children();
+	if($(this).hasClass('backArrow')){
+		// imgCounter = imgCounter - 1;
+		imgCounter = (imgCounter - 1) % arrowThumb.length;
+		var newImg = arrowThumb.eq(imgCounter).attr("src");
+		console.log(imgCounter);
+		console.log(newImg);
+		arrowImg.attr("src", newImg);
+	} else if($(this).hasClass('fowardArrow')){
+		// imgCounter = imgCounter + 1;
+		imgCounter = (imgCounter + 1) % arrowThumb.length;
+		var newImg = arrowThumb.eq(imgCounter).attr("src");
+		console.log(imgCounter);
+		console.log(newImg);
+		arrowImg.attr("src", newImg);
+
+	}
+	// console.log(arrowThumb.eq(3));
+	// console.log(arrowImg);
+})
 
 /////////// guide step ///////////
 	function guideStep() {

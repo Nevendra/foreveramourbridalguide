@@ -215,21 +215,6 @@
         margin: 0 auto;
         margin: 5px;
     }
-    
-    .yesMessage {
-        text-align: center;
-        border-top: 1px solid white;
-        border-bottom: 1px solid white;
-        color: white;
-        background-color: #A1D4CD;
-        margin: 10px 0px;
-        box-shadow: 0 5px 2px -2px gray;
-        padding: 5px;
-    }
-    .yesMessage p {
-        font-size: 17px;
-        font-weight: bold;
-    }
 
     .slideContainer {
         background-color: #b1e4e3;
@@ -255,13 +240,23 @@
         display: none;
     }
 
-    .allChecked a {
+    .allChecked a, .notChecked a {
       color: white;
     }
     .allChecked p {
       font-size: 24px;
       color: white;
       font-weight: bold;
+    }
+
+    .notChecked {
+        text-align: center;
+        width: 100%; 
+        margin-bottom: 10px;
+        padding: 5px 0px 5px 0px;
+        border-bottom: solid 1px white;
+        background-color: #F99E76;
+        box-shadow: 4 0px 2px -2px gray;
     }
 
     .backButton {
