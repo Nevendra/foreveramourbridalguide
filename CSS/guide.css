@@ -319,6 +319,17 @@
         color: white;
         font-size: 12px;
     }
+    
+/*    .attribution {
+        font-size: 8px;
+    }*/
+    .attribution a {
+        color: black;
+        font-size: 10px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
 
     #mobileNav {
     }
