@@ -397,7 +397,7 @@ a {
 
   }
   .smallerText li {
-    font-size: 20px;
+    font-size: 17px;
   }
   .flip p {
     font-size: 22px;
@@ -553,10 +553,10 @@ a {
       margin-right: 170px;
       font-size: 18.5px;
     }
-      .shadow5 ul li , .shadow6 ul li {
-    margin-bottom: 15px;
+    .shadow5 ul li , .shadow6 ul li {
+      margin-bottom: 10px;
 
-  }
+    }
 }
 @media screen and (min-width: 1050px) {
     .months {
@@ -625,4 +625,5 @@ a {
   .fowardArrow {
     color: white;
   }
+
  } 
