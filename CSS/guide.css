@@ -162,7 +162,7 @@
       font-size: 24px;
       font-weight: bold;
       color: white;
-      margin: 5px 0px;
+      margin-bottom: 5px;
       font-family: 'Courgette', cursive;
     }
     .guideIntro, .guideEnd {
@@ -737,6 +737,10 @@
     .guideIntro, .guideEnd {
         width: 50%; 
         margin: 0 auto;
+    }
+
+    .guideIntro p, .guideEnd p {
+        font-size: 30px;
     }
     .hamburgerMenu {
         display: none;
