@@ -98,17 +98,17 @@ $('.imgArrows').click(function(){
 
 				$(".transitionAnimation").css("display", "block");
 					function fades(){
-						$(".animationImage").fadeIn(2000, function(){
-							$(".animationImage").fadeOut(3000, function(){
+						$(".animationImage").fadeIn(1000, function(){
+							$(".animationImage").fadeOut(1000, function(){
 								transitionToNextStep();
-								$('.animationLeft').animate({left: "-50%"}, 500);
-								$('.animationRight').animate({right: "-50%"}, 500);
-								$(".transitionAnimation").stop().fadeOut(1000);
+								$('.animationLeft').animate({left: "-50%"}, 300);
+								$('.animationRight').animate({right: "-50%"}, 300);
+								$(".transitionAnimation").stop().fadeOut(500);
 							});/////// end of fade out
 						});/////end of fadeIn
 					}//// end of fades
-					$('.animationRight').animate({right: "0%"}, 500);
-					$('.animationLeft').animate({left: "0%"}, 500, fades);
+					$('.animationRight').animate({right: "0%"}, 300);
+					$('.animationLeft').animate({left: "0%"}, 300, fades);
 
 		})
 
