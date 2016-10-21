@@ -49,6 +49,9 @@
         padding: 0px;
         margin: 0px;
     }
+    .important {
+        color: red;
+    }
     #start {
         margin-bottom: 10px;
     }
