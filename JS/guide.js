@@ -1,6 +1,11 @@
 $(document).ready(function(){
 
 	var windowWidth = $(window).width();
+
+	$('.unCheckAll').click(function(){
+		$("input:checkbox").attr('checked', false);
+		console.log($("input:checkbox"));
+	})
 ////////////////// navagation/////////	
 	function toggleNav() {
 		$('nav').slideToggle()
