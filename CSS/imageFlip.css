@@ -205,10 +205,11 @@ a {
   font-size: 19px;
   /*color: #1db2a3;*/
   color: #35586C;
+  font-weight: bold;
 
 }
 .shadow5 ul li , .shadow6 ul li {
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 
 }
 .smallerText li {
@@ -304,7 +305,7 @@ a {
   text-align: center;
   line-height: 23px;
   color: white;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .boxTitle {
   height: 60px;
@@ -427,6 +428,11 @@ a {
     float: right;
     margin-right: 100px;
   }
+
+  .shadow5 ul li , .shadow6 ul li {
+   margin-bottom: 10px;
+
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -488,6 +494,7 @@ a {
     margin-right: 100px;
     font-size: 18.5px;
   }
+
 }
 
 @media screen and (min-width: 700px) {
@@ -500,7 +507,10 @@ a {
     margin-right: 130px;
     font-size: 18.5px;
   }
+  .shadow5 ul li , .shadow6 ul li {
+    margin-bottom: 10px;
 
+  }
 }
 
 @media screen and (min-width: 750px) {
@@ -540,6 +550,11 @@ a {
       margin-right: 130px;
       font-size: 18.5px;
     }
+
+  .shadow5 ul, .shadow6 ul {
+    font-weight: normal;
+
+  }
 } 
 @media screen and (min-width: 800px) {
     .months {
