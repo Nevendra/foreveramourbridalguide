@@ -127,7 +127,7 @@
         font-size: 35px;
         font-weight: bold;
         margin: 3px 0px;
-        padding: 5px;
+        padding: 10px;
     }
 
     .mainTitleSub p {
@@ -181,7 +181,7 @@
         margin: 0 auto;
         text-align: center;
         padding: 5px;
-        font-size: 20px;
+        font-size: 17px;
         font-weight: bold;
         border: solid 3px white;
         background-color: #776e64;
@@ -512,6 +512,7 @@
 @media screen and (min-width: 330px) {
     .mainTitle p {
         font-size: 30px;
+        padding: 0px;
     }
     .yesMessage p {
         font-size: 25px;
@@ -521,7 +522,7 @@
     }
 
     .guideIntro p {
-        font-size: 25px;
+        font-size: 20px;
     }
 } 
 @media screen and (min-width: 400px) {
@@ -538,7 +539,9 @@
         font-size: 20px;
     }
 
-
+    .guideIntro p {
+        font-size: 20px;
+    }
 } 
 
 @media screen and (min-width: 450px) {
@@ -550,7 +553,6 @@
         font-size: 25px;
         font-weight: bold;
         margin: 3px 0px;
-        padding: 5px;
     }
     .knotLeft {
         top: 200px;
@@ -595,6 +597,7 @@
 
     .guideIntro p {
         width: 75%;
+        font-size: 30px;
     }
     .mainTitle p {
         font-size: 30px;
@@ -683,6 +686,7 @@
         font-size: 45px;
         font-weight: bold;
         /*margin: 3px 100px;*/
+        padding: 0px 20px;
     }
     .mainBodyImage {
         height: 400px;
@@ -757,6 +761,10 @@
     .guideIntro, .lastStep{
         width: 50%; 
         margin: 0 auto;
+    }
+    .guideIntro p {
+        width: 90%;
+        font-size: 30px;
     }
 
 }

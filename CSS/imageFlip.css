@@ -163,11 +163,15 @@ a {
 
 
 .box5{
-  height: 300px;
+  height: 400px;
 }
 .box6{
   width: 90%;
   height: 400px;
+}
+
+.boxSmall {
+  height: 300;
 }
 
 .shadow5,.shadow6 {
@@ -202,7 +206,7 @@ a {
   padding-right: 5px;
   margin: 0px;
   text-align: left;
-  font-size: 19px;
+  font-size: 17px;
   /*color: #1db2a3;*/
   color: #35586C;
   font-weight: bold;
@@ -216,9 +220,9 @@ a {
   font-size: 15px;
 }
 
-.smallerText2 li {
+/*.smallerText2 li {
   font-size: 12px;
-}
+}*/
 
 .guideThreeCheckOne p {
   font-size: 15px;
@@ -397,7 +401,7 @@ a {
     font-size: 17px;
   }
   .shadow5 ul, .shadow6 ul {
-    font-size: 22px;
+    font-size: 20px;
     padding-left: 30px;
   }
   .shadow5 ul li , .shadow6 ul li {
@@ -442,6 +446,11 @@ a {
   .shadow5 ul li , .shadow6 ul li {
    margin-bottom: 10px;
 
+  }
+
+  .shadow5 ul, .shadow6 ul {
+    font-size: 20px;
+    padding-left: 30px;
   }
 }
 
