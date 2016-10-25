@@ -178,7 +178,7 @@ a {
     padding-top: 10px;
 }
 
-.shadow5 p, .shadow6 p, .pdfSteps p {
+.shadow5 p, .shadow6 p {
   padding: 3px;
   font-size: 19px;
   text-align: center;
@@ -579,6 +579,9 @@ a {
     .shadow5 ul li , .shadow6 ul li {
       margin-bottom: 10px;
 
+    }
+    .shadow5 p {
+      margin-bottom: 5px;
     }
 }
 @media screen and (min-width: 1050px) {
