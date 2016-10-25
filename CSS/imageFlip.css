@@ -135,7 +135,7 @@ a {
 .box{
   width:68%;
   height:200px;
-  background-image: url(../Images/edited-preview.jpg);
+  background-image: url(../GImages/edited-preview.jpg);
   background-color: #d7d2cb;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -214,6 +214,10 @@ a {
 }
 .smallerText li {
   font-size: 15px;
+}
+
+.smallerText2 li {
+  font-size: 12px;
 }
 
 .guideThreeCheckOne p {
@@ -363,6 +367,9 @@ a {
     float: right;
     margin-right: 40px;
   }
+  .smallerText2 li {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 400px) {
@@ -399,6 +406,9 @@ a {
   }
   .smallerText li {
     font-size: 17px;
+  }
+  .smallerText2 li {
+  font-size: 14.5px;
   }
   .flip p {
     font-size: 22px;
@@ -473,6 +483,9 @@ a {
   }
   .monthBreak {
     display: none;
+  }
+  .smallerText2 li {
+    font-size: 17px;
   }
 }  
 
@@ -582,6 +595,9 @@ a {
     }
     .shadow5 p {
       margin-bottom: 5px;
+    }
+    .smallerText2 li {
+      font-size: 20px;
     }
 }
 @media screen and (min-width: 1050px) {

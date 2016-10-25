@@ -136,6 +136,6 @@ $('.imgArrows').click(function(){
 		})
 
 	}
-	 guideStep();
+	 // guideStep();
 
 });
