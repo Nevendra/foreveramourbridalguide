@@ -278,6 +278,21 @@ a {
   width: 100%;
   height: 50%;
 }
+.face .back img {
+  width: 90%;
+  height: 50%;
+}
+
+.flip .card.flipped .lastImg img {
+    width: 70%;
+    height: 60%;
+}
+
+.flip .card.flipped .otherSmallImg img {
+    width: 90%;
+    height: 70%;
+}
+
 .flip .card {
   width: 100%;
   height: 100%;
@@ -303,6 +318,8 @@ a {
     color: black;
     cursor: pointer;
 }
+
+
 .card img {
   width: 100%;
   height: 200px;
@@ -434,7 +451,15 @@ a {
     border-radius: 100px;
     border: 1px solid white;
   }
+  .flip .card.flipped .lastImg img {
+    width: 60%;
+    height: 60%;
+  }
 
+  .flip .card.flipped .otherSmallImg img {
+    width: 80%;
+    height: 70%;
+  }
 }
 
 @media screen and (min-width: 450px) {
@@ -457,6 +482,16 @@ a {
 @media screen and (min-width: 500px) {
   .flip .card.flipped img {
     width: 100%;
+    height: 100%;
+  }
+
+  .flip .card.flipped .lastImg img {
+    width: 70%;
+    height: 100%;
+  }
+
+  .flip .card.flipped .otherSmallImg img {
+    width: 90%;
     height: 100%;
   }
   .checkBoxes {
@@ -499,8 +534,9 @@ a {
 }  
 
 @media screen and (min-width: 600px) {
-  .shadow5 p, .shadow6 p, .pdfSteps p {
+  .shadow5 p, .shadow6 p {
     font-size: 25px;
+    line-height: 20px
   }
   .flip p {
     font-size: 25px;
@@ -514,7 +550,16 @@ a {
   .months {
     float: right;
     margin-right: 100px;
-    font-size: 18.5px;
+    font-size: 17px;
+  }
+  .flip .card.flipped .lastImg img {
+    width: 70%;
+    height: 100%;
+  }
+
+  .flip .card.flipped .otherSmallImg img {
+    width: 90%;
+    height: 100%;
   }
 
 }
@@ -527,12 +572,22 @@ a {
   .months {
     float: right;
     margin-right: 130px;
-    font-size: 18.5px;
+    font-size: 17px;
   }
   .shadow5 ul li , .shadow6 ul li {
     margin-bottom: 10px;
 
   }
+  .flip .card.flipped .lastImg img {
+    width: 70%;
+    height: 100%;
+  }
+
+  .flip .card.flipped .otherSmallImg img {
+    width: 90%;
+    height: 100%;
+  }
+
 }
 
 @media screen and (min-width: 750px) {
@@ -560,7 +615,7 @@ a {
     margin: 0 auto;
   }
 
-   .shadow5 p, .shadow6 p, .pdfSteps p {
+   .shadow5 p, .shadow6 p {
     font-size: 30px;
   }
   .flip p {
@@ -570,12 +625,16 @@ a {
     .months {
       float: right;
       margin-right: 130px;
-      font-size: 18.5px;
+      font-size: 17px;
     }
 
   .shadow5 ul, .shadow6 ul {
     font-weight: normal;
 
+  }
+  .flip .card.flipped .otherSmallImg img {
+    width: 80%;
+    height: 100%;
   }
 } 
 @media screen and (min-width: 800px) {
@@ -589,14 +648,14 @@ a {
     .months {
       float: right;
       margin-right: 170px;
-      font-size: 18.5px;
+      font-size: 17px;
     }
 }
 @media screen and (min-width: 1000px) {
     .months {
       float: right;
       margin-right: 170px;
-      font-size: 18.5px;
+      font-size: 17px;
     }
     .shadow5 ul li , .shadow6 ul li {
       margin-bottom: 10px;
@@ -608,12 +667,21 @@ a {
     .smallerText2 li {
       font-size: 20px;
     }
+  .flip .card.flipped .lastImg img {
+    width: 45%;
+    height: 100%;
+  }
+
+  .flip .card.flipped .otherSmallImg img {
+    width: 60%;
+    height: 100%;
+  }
 }
 @media screen and (min-width: 1050px) {
     .months {
       float: right;
       margin-right: 190px;
-      font-size: 18.5px;
+      font-size: 17px;
     }
 }
 @media screen and (min-width: 1100px) {
@@ -627,7 +695,7 @@ a {
     .months {
       float: right;
       margin-right: 230px;
-      font-size: 18.5px;
+      font-size: 17px;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -674,6 +742,11 @@ a {
     width: 45%;
     height: 100%;
   }
+
+  .flip .card.flipped .otherSmallImg img {
+    width: 60%;
+    height: 100%;
+}
   .flip .card.flipped .fullWidth img {
     width: 100%;
     height: 100%;

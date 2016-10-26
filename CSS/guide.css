@@ -500,6 +500,10 @@
     footer a {
         color: #e06161;
     }
+
+    footer ul {
+        list-style-type: none;
+    }
    
 
 
@@ -521,7 +525,7 @@
       font-size: 30px;
     }
 
-    .guideIntro p {
+    .guideIntro p, .lastStep p {
         font-size: 20px;
     }
 } 
@@ -595,9 +599,9 @@
         height: 300px;
     }
 
-    .guideIntro p {
+    .guideIntro p, .lastStep p {
         width: 75%;
-        font-size: 30px;
+        font-size: 27px;
     }
     .mainTitle p {
         font-size: 30px;
@@ -762,8 +766,8 @@
         width: 50%; 
         margin: 0 auto;
     }
-    .guideIntro p {
-        width: 90%;
+    .guideIntro p, .lastStep p {
+        width: 95%;
         font-size: 30px;
     }
 
