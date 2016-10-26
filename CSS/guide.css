@@ -169,25 +169,26 @@
       font-family: 'Courgette', cursive;
     }
     .guideIntro, .lastStep {
-        width: 100%; 
+        width: 80%; 
         text-align: center;
+        background-color: #776e64;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        border: solid 3px white;
     }
     .guideIntro img, .lastStep img {
         width: 100%;
         /*border: solid 3px #1db2a3; */
+
     }
     .guideIntro p, .lastStep p {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
-        padding: 5px;
         font-size: 17px;
         font-weight: bold;
-        border: solid 3px white;
-        background-color: #776e64;
         color: white;
-        margin-top: 50px;
-        margin-bottom: 20px;
         font-family: 'Dancing Script', cursive;
     }
 
@@ -246,12 +247,14 @@
 
     .allChecked a, .notChecked a {
       color: white;
+
     }
     .allChecked p {
       font-size: 12px;
       color: white;
       font-weight: bold;
     }
+
 
     .notChecked {
         text-align: center;
@@ -528,6 +531,10 @@
     .guideIntro p, .lastStep p {
         font-size: 20px;
     }
+    .guideIntro, .lastStep {
+        width: 90%;
+    }
+
 } 
 @media screen and (min-width: 400px) {
     .mainTitle p {
@@ -545,6 +552,9 @@
 
     .guideIntro p {
         font-size: 20px;
+    }
+    .guideIntro, .lastStep {
+        width: 90%;
     }
 } 
 
@@ -598,9 +608,13 @@
     .mainBodyImage {
         height: 300px;
     }
+    
+    .guideIntro, .lastStep {
+        width: 75%;
+    }
 
     .guideIntro p, .lastStep p {
-        width: 75%;
+        width: 100%;
         font-size: 27px;
     }
     .mainTitle p {
@@ -683,6 +697,10 @@
     .mobileLogo {
         font-size: 35px;
     }
+    .guideIntro, .lastStep {
+        width: 70%;
+    }
+
 }  
 
 @media screen and (min-width: 750px) {
@@ -765,9 +783,11 @@
     .guideIntro, .lastStep{
         width: 50%; 
         margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 20px;
     }
     .guideIntro p, .lastStep p {
-        width: 95%;
+        width: 100%;
         font-size: 30px;
     }
 
@@ -788,6 +808,8 @@
     .guideIntro, .lastStep{
         width: 50%; 
         margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 20px;
     }
 
     .guideIntro p, .lastStep p{
