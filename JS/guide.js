@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	var windowWidth = $(window).width();
-
+/////////uncheck all check on begining click because when you leave the page and come back input are still checked////////
 	$('.unCheckAll').click(function(){
 		$("input:checkbox").attr('checked', false);
 		console.log($("input:checkbox"));
